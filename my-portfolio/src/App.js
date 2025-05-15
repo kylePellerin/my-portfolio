@@ -17,7 +17,7 @@ const Hero = () => (
   <section id="hero" style={{ padding: '4rem 2rem', textAlign: 'center', backgroundColor: '#f4f4f4' }}>
     <h1>Kyle Pellerin</h1>
     <p>[Your Tagline - e.g., Software Developer | Web Designer | Tech Enthusiast]</p>
-    <button>View My Work</button>
+    <button>Download My Resume</button>
   </section>
 );
 const About = () => <section id="about" style={{ padding: '4rem 2rem' }}><h2>About Me Placeholder</h2></section>;

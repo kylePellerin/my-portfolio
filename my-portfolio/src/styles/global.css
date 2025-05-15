@@ -2,18 +2,22 @@
 
 /* --- Base & Typography --- */
 :root {
-  --primary-color: #61dafb; /* React blue - a vibrant accent */
-  --secondary-color: #bb86fc; /* A nice purple for secondary accents */
-  --background-dark: #121212; /* Main dark background */
-  --surface-dark: #1e1e1e; /* Slightly lighter for cards/surfaces */
-  --text-light: #e0e0e0; /* Primary text color on dark backgrounds */
-  --text-dark: #ffffff; /* For very prominent text or highlights */
-  --text-secondary-light: #a0a0a0; /* Softer text for less emphasis */
-  --border-color: #333333; /* Subtle borders */
+  --primary-color: #007bff; /* A vibrant blue, works well on light backgrounds */
+  --secondary-color: #000b4b; /* A nice deep purple for secondary accents */
+  --background-light: #ffffff; /* Main light background */
+  --surface-light: #f8f9fa; /* Slightly off-white for cards/surfaces */
+  --text-dark: #212529; /* Primary dark text color */
+  --text-light: #ffffff; /* For text on dark/colored backgrounds (e.g., buttons) */
+  --text-secondary-dark: #5a6268; /* Softer dark text for less emphasis */
+  --border-color: #dee2e6; /* Subtle light borders */
   --container-max-width: 1200px;
-  --border-radius: 8px; /* Slightly more rounded corners */
-  --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer, more modern shadow */
+  --border-radius: 8px;
+  --box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Softer shadow for light theme */
   --transition-speed: 0.3s;
+
+  /* RGB versions for box shadows with opacity (optional, but good for consistency) */
+  --primary-color-rgb: 0, 123, 255;
+  --secondary-color-rgb: 111, 66, 193;
 }
 
 * {
@@ -29,8 +33,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.7;
-  color: var(--text-light);
-  background-color: var(--background-dark);
+  color: var(--text-dark);
+  background-color: var(--background-light);
   transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
@@ -46,14 +50,14 @@ a {
 
 a:hover {
   color: var(--secondary-color);
-  text-decoration: none; /* Usually no underline for a sleek look */
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: 600;
   line-height: 1.3;
-  color: var(--text-dark); /* Brighter white for headings */
+  color: var(--text-dark); /* Main dark color for headings */
 }
 
 h1 { font-size: 2.8rem; }
@@ -62,7 +66,7 @@ h3 { font-size: 1.8rem; }
 
 p {
   margin-bottom: 1rem;
-  color: var(--text-secondary-light);
+  color: var(--text-secondary-dark);
 }
 
 /* --- App Container & Main Content --- */
@@ -77,30 +81,30 @@ main {
 }
 
 /* --- Navbar Placeholder Styling --- */
-/* Assuming the Navbar component is a <nav> element or has a class .navbar */
 nav {
-  background-color: var(--surface-dark) !important; /* Override inline style */
-  color: var(--text-light) !important; /* Override inline style */
-  padding: 1.5rem 2rem !important; /* Override inline style */
+  background-color: var(--surface-light) !important;
+  color: var(--text-dark) !important;
+  padding: 1.5rem 2rem !important;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow for navbar */
   position: sticky;
   top: 0;
   z-index: 1000;
   font-weight: 500;
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* --- Hero Section Placeholder Styling --- */
 #hero {
-  background-color: var(--background-dark) !important; /* Override inline style */
-  color: var(--text-light);
-  padding: 6rem 2rem !important; /* Override inline style */
+  background-color: var(--background-light) !important;
+  color: var(--text-dark);
+  padding: 6rem 2rem !important;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 70vh; /* Give it some height */
+  min-height: 70vh;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -113,45 +117,46 @@ nav {
 
 #hero p {
   font-size: 1.4rem;
-  color: var(--text-secondary-light);
+  color: var(--text-secondary-dark);
   margin-bottom: 2.5rem;
   max-width: 700px;
 }
 
 #hero button {
   background-color: var(--primary-color);
-  color: var(--background-dark); /* Dark text on light blue button for contrast */
+  color: var(--text-light); /* Light text on primary color button */
   border: none;
   padding: 0.8rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: var(--border-radius);
   cursor: pointer;
-  transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
-  box-shadow: 0 2px 8px rgba(var(--primary-color-rgb, 97, 218, 251), 0.3); /* Glow effect */
+  transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  box-shadow: 0 4px 10px rgba(var(--primary-color-rgb), 0.25); /* Subtle shadow based on primary color */
 }
 
 #hero button:hover {
-  background-color: var(--secondary-color);
-  color: var(--text-dark);
+  background-color: #0f2ac2;
+  color: var(--text-light);
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 4px 12px rgba(var(--secondary-color-rgb, 187, 134, 252), 0.4);
+  box-shadow: 0 6px 15px rgba(var(--secondary-color-rgb), 0.3); /* Enhanced shadow on hover */
 }
 
 /* --- General Section Styling (About, Projects, Skills, Contact) --- */
-/* Targets sections by ID as in App.js placeholders */
 #about, #projects, #skills, #contact {
-  padding: 5rem 2rem !important; /* Override inline style */
+  padding: 5rem 2rem !important;
   max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
 }
 
 #projects, #contact { /* Alternating background example */
-  background-color: var(--surface-dark) !important; /* Override inline style */
+  background-color: var(--surface-light) !important;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
-section h2 { /* Styling for section titles */
+section h2 {
   text-align: center;
   margin-bottom: 3rem;
   color: var(--primary-color);
@@ -160,7 +165,6 @@ section h2 { /* Styling for section titles */
   padding-bottom: 0.5rem;
 }
 
-/* Cool underline effect for section titles */
 section h2::after {
   content: '';
   position: absolute;
@@ -176,9 +180,9 @@ section h2::after {
 
 /* --- Footer Placeholder Styling --- */
 footer {
-  background-color: var(--surface-dark) !important; /* Override inline style */
-  color: var(--text-secondary-light) !important; /* Override inline style */
-  padding: 2rem 1rem !important; /* Override inline style */
+  background-color: var(--surface-light) !important;
+  color: var(--text-secondary-dark) !important;
+  padding: 2rem 1rem !important;
   text-align: center;
   font-size: 0.9rem;
   border-top: 1px solid var(--border-color);
@@ -189,7 +193,6 @@ footer {
   h1 { font-size: 2.4rem; }
   h2 { font-size: 1.9rem; }
   section h2 { font-size: 2rem; }
-
 
   #hero {
     padding: 4rem 1rem !important;
@@ -217,10 +220,3 @@ footer {
     margin-bottom: 2rem;
   }
 }
-
-/* Add this to your :root if you want to use RGB values for box shadows with opacity */
-/* :root {
-  --primary-color-rgb: 97, 218, 251;
-  --secondary-color-rgb: 187, 134, 252;
-} */
-
