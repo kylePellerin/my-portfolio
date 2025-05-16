@@ -1,0 +1,51 @@
+/* src/components/sections/Projects.module.css */
+/* Styles for the enhanced Projects.js section component */
+
+.projectsSection {
+  /* If this is a section within a page, padding might come from a parent or global styles.
+     If it's acting as a full page content, max-width and centering are good.
+  */
+  max-width: var(--container-max-width, 1200px); 
+  margin: 0 auto; /* Center the section */
+  padding: 3rem 1rem; /* Standard section padding */
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem; 
+  color: var(--text-secondary-dark);
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to 1 column */
+  gap: 2rem; 
+}
+
+.noProjects {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-secondary-dark);
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: var(--surface-light);
+  border-radius: var(--border-radius);
+}
+
+/* Responsive grid adjustments */
+@media (min-width: 768px) { /* Medium screens */
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+@media (min-width: 1024px) { /* Large screens */
+  .projectsGrid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}

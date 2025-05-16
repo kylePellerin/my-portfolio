@@ -1,0 +1,120 @@
+/* src/components/sections/ProjectCard.module.css */
+
+.card {
+  background-color: var(--surface-light); /* Using variable from global.css */
+  border-radius: var(--border-radius); /* Using variable */
+  box-shadow: var(--box-shadow); /* Using variable */
+  overflow: hidden; /* Ensures image corners are rounded with the card */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Make card take full height of grid cell */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.cardImage {
+  width: 100%;
+  height: 220px; /* Fixed height for images */
+  object-fit: cover; /* Cover ensures image fills space without distortion */
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cardContent {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows content to fill remaining space */
+}
+
+.category {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 15px; /* Pill shape */
+  margin-bottom: 0.75rem;
+  align-self: flex-start; /* Align to the left */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.category.gis {
+  background-color: rgba(var(--primary-color-rgb), 0.15); /* Lighter primary color */
+  color: var(--primary-color);
+}
+
+.category.cs {
+  background-color: rgba(var(--secondary-color-rgb), 0.15); /* Lighter secondary color */
+  color: var(--secondary-color);
+}
+
+.title {
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--text-secondary-dark);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex-grow: 1; /* Allows description to take available space */
+}
+
+.tags {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: #e9ecef; /* Light gray for tags */
+  color: #495057; /* Darker gray text for tags */
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--border-radius);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.links {
+  margin-top: auto; /* Pushes links to the bottom of the card */
+  display: flex;
+  gap: 0.75rem; /* Space between buttons */
+}
+
+.linkButton {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.linkButton:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+/* Alternative style for the second button if needed */
+.linkButton:nth-child(2) {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.linkButton:nth-child(2):hover {
+  background-color: rgba(var(--primary-color-rgb), 0.1);
+  color: var(--primary-color); /* Keep text color or darken slightly */
+}
