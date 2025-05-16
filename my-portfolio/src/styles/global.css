@@ -1,9 +1,10 @@
 /* src/styles/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap'); /* Example: Importing Lato */
 
 /* --- Base & Typography --- */
 :root {
   --primary-color: #007bff; /* A vibrant blue, works well on light backgrounds */
-  --secondary-color: #000b4b; /* A nice deep purple for secondary accents */
+  --secondary-color: #6f42c1; /* A nice deep purple for secondary accents */
   --background-light: #ffffff; /* Main light background */
   --surface-light: #f8f9fa; /* Slightly off-white for cards/surfaces */
   --text-dark: #212529; /* Primary dark text color */
@@ -27,7 +28,8 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* Updated font-family to use Lato, with Inter and system fonts as fallbacks */
+  font-family: 'Lato', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -55,7 +57,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 600; /* Lato often looks good with a slightly bolder heading weight */
   line-height: 1.3;
   color: var(--text-dark); /* Main dark color for headings */
 }
@@ -112,7 +114,7 @@ nav {
   font-size: 3.5rem;
   color: var(--text-dark);
   margin-bottom: 1rem;
-  font-weight: 700;
+  font-weight: 700; /* Heavier weight for hero title */
 }
 
 #hero p {
@@ -125,21 +127,22 @@ nav {
 #hero button {
   background-color: var(--primary-color);
   color: var(--text-light); /* Light text on primary color button */
-  border: none;
+  border: 1px solid transparent; /* Start with a transparent border to prevent layout shift on hover */
   padding: 0.8rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: var(--border-radius);
   cursor: pointer;
-  transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease, border-color var(--transition-speed) ease, transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
   box-shadow: 0 4px 10px rgba(var(--primary-color-rgb), 0.25); /* Subtle shadow based on primary color */
 }
 
 #hero button:hover {
-  background-color: #0f2ac2;
-  color: var(--text-light);
+  background-color: var(--background-light); /* Change to white background */
+  color: var(--primary-color); /* Change text color to primary blue */
+  border: 1px solid var(--primary-color); /* Add a primary blue border */
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 6px 15px rgba(var(--secondary-color-rgb), 0.3); /* Enhanced shadow on hover */
+  box-shadow: 0 6px 15px rgba(var(--primary-color-rgb), 0.2); /* Adjusted shadow for white button */
 }
 
 /* --- General Section Styling (About, Projects, Skills, Contact) --- */
