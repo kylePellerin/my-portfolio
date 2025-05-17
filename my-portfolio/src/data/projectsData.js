@@ -14,7 +14,9 @@ export const projects = [
     description: "A web-based platform for visualizing and interacting with geospatial data, featuring custom layers and query capabilities.",
     tags: ["React", "Leaflet.js", "GeoJSON", "Node.js"], 
     liveLink: "https://example.com/gis-map-demo", 
+    liveLinkName: "test1",
     sourceLink: "https://github.com/yourusername/gis-map-project", 
+    sourceLinkName: "test2",
     imagePlaceholder: "https://placehold.co/600x400/007bff/white?text=GIS+Map+Project"
   },
   {
@@ -36,7 +38,9 @@ export const projects = [
     description: "The very website you are looking at! Built with React to showcase my skills and projects.",
     tags: ["React", "JavaScript", "CSS"],
     liveLink: null, 
+    liveLinkName: null,
     sourceLink: "https://github.com/kylePellerin/my-portfolio/tree/main/my-portfolio",
+    sourceLinkName: "Source Code",
     imagePlaceholder: "https://placehold.co/600x400/28a745/white?text=Portfolio+Website"
   },
   {

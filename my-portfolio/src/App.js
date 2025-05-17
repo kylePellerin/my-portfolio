@@ -17,19 +17,11 @@ import About from './components/sections/About';    // Or use './pages/AboutPage
 import Projects from './components/sections/Projects';// Or use './pages/ProjectsPage'
 import Skills from './components/sections/Skills';  // Or use './pages/SkillsPage'
 import Contact from './components/sections/Contact';// Or use './pages/ContactPage'
+import Experience from './components/sections/ExperiencePage';// Or use './pages/ContactPage'
 
-// Optional: You might want to create a NotFoundPage component for handling undefined routes
-// import NotFoundPage from './pages/NotFoundPage';
-
-
-/**
- * The main App component.
- * This component sets up the overall structure of the application,
- * including routing for different pages.
- */
 function App() {
   return (
-    // BrowserRouter (aliased as Router) is the parent component that enables routing.
+
     <Router>
       <div className="App"> {/* Main container for the application */}
         {/* Navbar will be displayed on all pages as it's outside the Routes definition */}
@@ -49,15 +41,12 @@ function App() {
                 These currently point to section components. If you create dedicated 
                 page components (e.g., AboutPage.js in src/pages/), update the 'element' prop accordingly.
             */}
+            <Route path="/experience" element={<Experience />} /> 
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
             
-            {/* Optional: A "catch-all" route for 404 Not Found pages.
-                This route will match if none of the above routes match.
-                You would need to create a NotFoundPage.js component.
-            */}
             {/* <Route path="*" element={<NotFoundPage />} /> */}
           </Routes>
         </main>

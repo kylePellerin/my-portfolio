@@ -1,0 +1,59 @@
+/* src/pages/ExperiencePage.module.css */
+
+.experiencePage {
+  max-width: var(--container-max-width, 960px); /* Slightly narrower for readability */
+  margin: 0 auto; /* This centers the entire page block */
+  padding: 2rem 1rem 4rem; /* More bottom padding */
+}
+
+.pageTitle {
+  text-align: center; /* This centers the main "My Experience" H1 */
+  font-size: 2.8rem; /* Large main title */
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.categorySection {
+  margin-bottom: 3.5rem;
+  /* text-align: center; /* No longer the primary method for centering block children */
+  display: flex; /* Use flexbox to control alignment of children */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children (the H2 title and each ExperienceItem block) horizontally */
+}
+
+.categorySection:last-child {
+  margin-bottom: 0;
+}
+
+.categoryTitle {
+  font-size: 1.8rem;
+  color: var(--primary-color); /* Use primary color for category titles */
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color); /* Underline category titles */
+  display: inline-block; /* Allows border-bottom to fit content width. Centering is now handled by parent's align-items. */
+  text-align: center; /* Ensures text within the title itself is centered if title spans multiple lines */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .categoryTitle {
+    font-size: 1.5rem;
+  }
+
+  .categorySection {
+    /* On smaller screens, you might want items to stretch more, 
+       but align-items: center still works well.
+       If you wanted them to be full width on mobile, you could change align-items here:
+       align-items: stretch; 
+       And then ensure ExperienceItem has width: 100% or similar for mobile.
+       For now, 'center' will be consistent.
+    */
+  }
+}

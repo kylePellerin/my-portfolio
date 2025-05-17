@@ -28,7 +28,7 @@ const Home = () => {
       {/* Placeholder content if Hero is not ready */}
       <div style={{ padding: '4rem 2rem', textAlign: 'center', minHeight: 'calc(100vh - 70px - 70px)' /* Adjust based on Navbar/Footer height */ }}>
         <h1>Welcome to My Portfolio</h1>
-        <p>This is the main landing page. You can showcase your most important information here.</p>
+        <p> This is the main landing page. You can showcase your most important information here.</p>
         <p>Consider adding a "Hero" section with a strong call to action, followed by featured projects or a brief "About Me" summary.</p>
       </div>
     </div>

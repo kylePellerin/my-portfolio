@@ -23,27 +23,11 @@ const Projects = ({ categoryFilter }) => { // categoryFilter can be passed as a 
       setPageTitle(`${currentCategory.toUpperCase()} Projects`); 
     } else {
       setProjects(getAllProjects());
-      setPageTitle('All My Projects'); // Or simply "My Projects" if used as a general section
+      setPageTitle('My Projects'); 
     }
   }, [currentCategory]); // Re-run effect if categoryFilter or urlCategory changes
 
-  if (!projects.length && currentCategory) { // Show message if category is filtered but no projects found
-    return (
-      <section id="projects-section" className={styles.projectsSection}>
-        <h2 className={styles.sectionTitle}>{pageTitle}</h2>
-        <p className={styles.noProjects}>No projects found for the "{currentCategory}" category yet. Stay tuned!</p>
-      </section>
-    );
-  }
-  
-  if (!projects.length && !currentCategory) { // Show message if no projects at all
-      return (
-          <section id="projects-section" className={styles.projectsSection}>
-            <h2 className={styles.sectionTitle}>{pageTitle}</h2>
-            <p className={styles.noProjects}>No projects have been added yet. Please check back soon!</p>
-          </section>
-      );
-  }
+
 
 
   return (

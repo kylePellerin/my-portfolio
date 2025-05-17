@@ -1,0 +1,143 @@
+/* src/pages/ContactPage.module.css */
+
+.contactPageContainer {
+  max-width: var(--container-max-width, 960px); /* Consistent with other pages */
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+  color: var(--text-dark);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pageTitle {
+  font-size: 2.8rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.subTitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary-dark);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contactMethodSection {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contactCard {
+  background-color: transparent;
+  padding: 2rem 2.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  max-width: 550px; /* Control width of cards */
+  width: 100%;
+}
+
+.contactCard h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contactCard p {
+  font-size: 1rem;
+  color: var(--text-secondary-dark);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.contactIcon {
+  font-size: 3rem; /* Size of the FaEnvelope icon */
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.contactButton {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contactButton:hover {
+  background-color: transparent;
+
+  color: var(--primary-color); 
+  border: 1px solid var(--primary-color); 
+}
+
+.socialLinksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+  gap: 2rem; /* Space between social links */
+  margin-top: 1.5rem;
+}
+
+.socialLink {
+  display: flex;
+  flex-direction: column; /* Stack icon and label */
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-color); /* Initial color for the icon and text */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.socialLink:hover {
+  /* Hover color is handled by JS in this example, but you can set a default here */
+  /* color: var(--secondary-color); */
+  transform: scale(1.1);
+}
+
+.socialLink svg { /* Target the SVG icon directly */
+  font-size: 2.5rem; /* Size of social icons */
+  margin-bottom: 0.5rem;
+}
+
+.socialLabel {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2.2rem;
+  }
+
+  .subTitle {
+    font-size: 1.1rem;
+  }
+
+  .contactCard {
+    padding: 1.5rem;
+  }
+
+  .contactCard h2 {
+    font-size: 1.6rem;
+  }
+
+  .socialLinksContainer {
+    gap: 1.5rem;
+  }
+
+  .socialLink svg {
+    font-size: 2.2rem;
+  }
+}

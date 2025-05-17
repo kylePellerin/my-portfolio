@@ -1,6 +1,3 @@
-/* src/components/sections/Projects.module.css */
-/* Styles for the enhanced Projects.js section component */
-
 .projectsSection {
   /* If this is a section within a page, padding might come from a parent or global styles.
      If it's acting as a full page content, max-width and centering are good.
@@ -18,8 +15,6 @@
   position: relative;
   padding-bottom: 0.5rem;
 }
-
-
 
 .projectsGrid {
   display: grid;

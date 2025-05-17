@@ -1,12 +1,8 @@
-// src/components/sections/Hero.js
-// Create this file in your src/components/sections/ directory.
 
 import React from 'react';
-// You can create a Hero.module.css for specific styles or use global styles.
-// import styles from './Hero.module.css'; 
+
 
 const Hero = () => {
-  // Inline styles for quick setup. Prefer CSS files for larger projects.
   const heroStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -49,17 +45,17 @@ const Hero = () => {
   return (
     <section id="hero-section" style={heroStyle}>
       <h1 style={headingStyle}>
-        [Your Name Here]
+        Welcome to my Portfolio
       </h1>
       <p style={taglineStyle}>
-        [Your Awesome Tagline: e.g., Creative Developer | Problem Solver | Tech Enthusiast]
+        I'm glad to see you're here! 
       </p>
       {/* Link this button to your projects page or another relevant section */}
       <a href="/projects" style={ctaButtonStyle}
-         onMouseEnter={(e) => { e.target.style.backgroundColor = 'var(--secondary-color)'; e.target.style.transform = 'translateY(-2px)';}}
+         onMouseEnter={(e) => { e.target.style.backgroundColor = 'navy'; e.target.style.transform = 'translateY(-2px)';}}
          onMouseLeave={(e) => { e.target.style.backgroundColor = 'var(--primary-color)'; e.target.style.transform = 'translateY(0)';}}
       >
-        Download Resume
+        View My Work
       </a>
     </section>
   );
