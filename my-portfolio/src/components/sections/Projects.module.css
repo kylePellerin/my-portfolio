@@ -4,13 +4,13 @@
   */
   max-width: var(--container-max-width, 1200px); 
   margin: 0 auto; /* Center the section */
-  padding: 3rem 1rem; /* Standard section padding */
+  padding: 2rem 0rem; /* Standard section padding */
 }
 
 .sectionTitle {
   text-align: center;
-  font-size: 2.5rem; 
-  color: var(--text-secondary-dark);
+  font-size: 3rem; 
+  color: var(--text-dark);
   margin-bottom: 3rem;
   position: relative;
   padding-bottom: 0.5rem;

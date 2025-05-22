@@ -8,7 +8,7 @@
 
 .pageTitle {
   text-align: center; /* This centers the main "My Experience" H1 */
-  font-size: 2.8rem; /* Large main title */
+  font-size: 3rem; /* Large main title */
   color: var(--text-dark);
   margin-bottom: 3rem;
   font-weight: 700;

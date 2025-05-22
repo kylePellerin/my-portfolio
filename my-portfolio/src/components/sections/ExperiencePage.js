@@ -17,11 +17,12 @@ import styles from './ExperiencePage.module.css'; // Assuming ExperiencePage.mod
 const ExperiencePage = () => {
   const groupedExperiences = getExperiencesByCategory();
   // Define the desired order for displaying categories
-  const categoriesInOrder = ['Jobs', 'Research', 'Leadership', 'Awards', 'Grants']; 
+  const categoriesInOrder = ['Work', 'Research', 'Leadership', 'Grants and Awards']; 
 
   return (
     <div className={styles.experiencePage}>
       <h1 className={styles.pageTitle}>Experience</h1>
+      
       
       {categoriesInOrder.map(categoryName => {
         // Get items for the current category
