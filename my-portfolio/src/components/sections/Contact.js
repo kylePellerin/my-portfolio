@@ -29,7 +29,7 @@ const ContactPage = () => {
       <header className={styles.header}>
         <h1 className={styles.pageTitle}>Get In Touch</h1>
         <p className={styles.subTitle}>
-          I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing.
+          I'm always open to discussing new projects, creative ideas, or opportunities to collaborate.
         </p>
       </header>
 
@@ -49,7 +49,7 @@ const ContactPage = () => {
         <div className={`${styles.contactCard} ${styles.socialCard}`}>
           <h2>Connect Online</h2>
           <p>
-            Follow my work, connect with me, or drop a message on my social platforms.
+            Follow my work, and drop a message on my social platforms.
           </p>
           <div className={styles.socialLinksContainer}>
             {socialLinks.map(social => (

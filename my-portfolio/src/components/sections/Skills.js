@@ -7,24 +7,30 @@ import styles from './Skills.module.css'; // We'll create this CSS module
 // Define your skills data directly in the component
 const skillCategories = [
   {
-    categoryName: "Programming & Scripting",
-    skills: ["JavaScript (ES6+)", "Python", "SQL", "HTML5", "CSS3", "React", "Node.js"]
+    categoryName: "Programming & Computer Science",
+    skills: [ "Python", "Java", "C", "R", "JavaScript", "CSS", "React.js", "Idris 2", "Numpy", "Pandas", "AWS", "Scikit-Learn", "Vercel"]
   },
   {
     categoryName: "GIS & Mapping",
-    skills: ["ArcGIS Pro", "QGIS", "Leaflet.js", "Mapbox GL JS", "Google Earth Engine", "Spatial Analysis", "Remote Sensing", "Geodatabases"]
+    skills: ["ArcGIS Pro", "ArcGIS Online", "Leaflet (R)", "SF (R)", "Storymaps", "Geodatabases", "Geo-Consulting", "ArcGIS Dashboard", "Census Data", "Cartographic Design", "Excel" ]
   },
-  {
-    categoryName: "Data & Databases",
-    skills: ["Data Analysis", "Data Visualization (e.g., D3.js, Chart.js)", "PostgreSQL (PostGIS)", "MongoDB", "SQLite", "Excel"]
+   {
+    categoryName: "Technical Skills",
+    skills: ["Technical Writing", "Consulting","Project Management","Grants", "Poster Presentations", "Powerpoint", "Adressing Stakeholders", "Interviews", "Problem Solving", "Project Design" ]
   },
-  {
+    {
     categoryName: "Development Tools & Practices",
-    skills: ["Git & GitHub", "VS Code", "Agile Methodologies", "REST APIs", "Command Line Interface (CLI)"]
+    skills: ["Git & GitHub", "Visual Studio Code", "Command Line Interface (CLI)", "IntelliJ IDEA", "Wing 101", "Jupyter Notebook", "Google Colab"]
+  },
+ 
+  {
+    categoryName: "Agricultural and Practical",
+    skills: ["Gardening", "Mowing", "Landscaping", "Plant Breeding", "Raising Livestock", "Beekeeping", "Bed Edging", "Lawn Care", "Haying", "Basic Construction"]
+    // Added cooking & gardening as per your logo themes, adjust as you see fit!
   },
   {
-    categoryName: "Other Relevant Skills",
-    skills: ["Problem Solving", "Technical Writing", "Cartographic Design", "Project Management (Basic)", "Cooking Techniques", "Gardening Principles"]
+    categoryName: "Hobbies and Intrests",
+    skills: ["Ski Racing", "DJing", "Cooking", "Fishing", "Ski Touring", "Hiking", "Conservation", "Machine Learning", "Climate Change","Data Science" ,"Community Resilience" ]
     // Added cooking & gardening as per your logo themes, adjust as you see fit!
   }
 ];
@@ -36,7 +42,7 @@ const SkillsPage = () => {
       <header className={styles.header}>
         <h1 className={styles.pageTitle}>My Skills & Expertise</h1>
         <p className={styles.subTitle}>
-          A snapshot of the technologies, tools, and methodologies I work with.
+          A snapshot of the technologies, tools, and methodologies I have experience with. As well as some of my intrests.  
         </p>
       </header>
 

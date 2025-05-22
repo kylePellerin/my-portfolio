@@ -20,7 +20,7 @@ export const experiences = [
     imagePlaceholder: '',
     dates: 'September 2025 - December 2025',
     descriptionPoints: [
-      'Incoming teaching assistant for the Building Resilient Communities GIS Course.', 
+      'Incoming teaching assistant for the "Building Resilient Communities" GIS Course.', 
       'Responsibilities include facilitating the learning process through assisting teaching the course, independent office hours to assist students on assignments, and serving as a first point of contact for the students.'
 
     ],
@@ -96,8 +96,8 @@ export const experiences = [
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
     dates: 'October 2023 - May 2025',
     descriptionPoints: [
-      'Coordinated with peer institutions to create an index evaluating social vulnerability in Maine, and presented reports that helped inform Maine’s LD-1 storm preparedness legislation.',
-      'Utilized ArcGIS to spatialize results and interpret trends and findings, produced maps and data for the Maine Social Vulnerability Index Dashboard. Performed sector-based interviews and evaluated them using NVIVO.'
+      'Established a quantitative data analysis metric for evaluating the effectiveness of the Maine Governor`s Office of Policy and Innovation for the Future`s Community Resilience Program.',
+      'Researched the relationship between municipalities` ability to apply for grants, expand their digital capacity, and increase community resilience. Presented findings at the American Association of Geographers conference.'
     ],
   },
     {
@@ -167,7 +167,7 @@ export const experiences = [
     imagePlaceholder: 'https://placehold.co/80x80/ffc107/black?text=Lead',
     dates: 'September 2020 - June 2022',
     descriptionPoints: [
-      'Helped lead and coordinate Jewish life on campus', 
+      'Helped lead and coordinate Jewish life on campus.', 
       'Planned both in-society and entire school events, delivered educational talks, helped promote DEI initiatives, and assisted in the establishment of St. Pauls School’s first ever multi-faith space. '
     ],
   },
