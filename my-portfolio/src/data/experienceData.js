@@ -6,9 +6,45 @@ import COBALTLOGO from '../data/Coblat_logo.jpg'
 import IDEASLOGO from '../data/IDEAS_LOGO.png'
 import StPaulsLOGO from '../data/St.PaulsLOGO.png'
 import MEGUGLOGO from '../data/MEGUG_LOGO.png'
-import Shared_Harvest_LOGO from '../data/Shared_Harvest_logo.png'
+import _Harvest_LOGO from '../data/Shared_Harvest_logo.png'
 
 export const experiences = [
+   {
+    id: 'edu1',
+    category: 'Education', // Categories: Jobs, Research, Leadership, Awards, Grants
+    title: 'Bowdoin College',
+    organization: 'Bachelor of Arts in Computer Science and Environmental Studies',
+    // For images in `public` folder:
+    logoUrl: BowdoinLogo, 
+    // If importing from `src`: logoUrl: CompanyLogoPlaceholder,
+    imagePlaceholder: '',
+    dates: 'September 2022 - present',
+    descriptionPoints: [
+      'Expected graduation: May 2026',
+      'Computer science relevant coursework:  Data Structures, Algorithms, Artificial Intelligence, Computer Systems', 
+      'Environmental Studies (GIS) relevant coursework: Applications in GIS and Remote Sensing, Nature of Data, Building Resilient Communities ',
+      'Attended the School For International Training during the fall of my junior year to study abroad in Iceland'
+
+    ],
+  },
+     {
+    id: 'edu3',
+    category: 'Education', // Categories: Jobs, Research, Leadership, Awards, Grants
+    title: 'St. Pauls School',
+    organization: 'High School Degree',
+    // For images in `public` folder:
+    logoUrl: StPaulsLOGO, 
+    // If importing from `src`: logoUrl: CompanyLogoPlaceholder,
+    imagePlaceholder: '',
+    dates: 'September 2018 - June 2022',
+    descriptionPoints: [
+      'Graduated with honors in the humanities and sciences, as well as with honors for being selected to be a part of the Applied Science and Engineering Program.', 
+      'Activities: Alpine Ski Team, Crew, Hillel Society, Dorm Proctor'
+      
+    ],
+  },
+  //Work ************************************************************************************************************************
+
      {
     id: 'job1',
     category: 'Work', // Categories: Jobs, Research, Leadership, Awards, Grants
@@ -150,8 +186,8 @@ export const experiences = [
     id: 'lead2',
     category: 'Leadership',
     title: 'Founder',
-    organization: 'Shared Harvest of Hopkinton',
-    logoUrl: Shared_Harvest_LOGO,
+    organization: ' Harvest of Hopkinton',
+    logoUrl: _Harvest_LOGO,
     imagePlaceholder: 'https://placehold.co/80x80/ffc107/black?text=Lead',
     dates: 'May 2019 - September 2023',
     descriptionPoints: [
@@ -207,14 +243,14 @@ export const experiences = [
     dates: 'May 2021',
     descriptionPoints: [
       'Received runner up in this annual grant given by St. Pauls School which enables students to work on community service projects of their design. ',
-      'Used funds to assist with a plant drive and community garden for my pre-existing Shared Harvest of Hopkinton Program.'
+      'Used funds to assist with a plant drive and community garden for my pre-existing  Harvest of Hopkinton Program.'
     ],
   },
 ];
 
 // Helper function to group experiences by category
 export const getExperiencesByCategory = () => {
-  const categories = ['Work', 'Research', 'Leadership', 'Grants and Awards'];
+  const categories = ['Education','Work', 'Research', 'Leadership', 'Grants and Awards'];
   const grouped = {};
   categories.forEach(category => {
     grouped[category] = experiences.filter(exp => exp.category === category);
