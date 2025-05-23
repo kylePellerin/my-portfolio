@@ -1,9 +1,6 @@
-// src/pages/AboutPage.js
-// Create this file in your src/pages/ directory.
-// Or, if you're using src/components/sections/About.js as your page, adapt this content there.
 
 import React from 'react';
-import styles from './About.module.css'; // We'll create this CSS module
+import styles from './About.module.css'; 
 
 // Example: If you import images from your src/assets folder
 // import profilePic1 from '../assets/profile-picture-1.jpg';
@@ -14,9 +11,6 @@ const AboutPage = () => {
     <div className={styles.aboutPageContainer}>
       <header className={styles.header}>
         <h1 className={styles.pageTitle}>About Me</h1>
-        <p className={styles.subTitle}>
-          A little more about my journey, passions, and what drives me.
-        </p>
       </header>
 
       {/* Section 1: Introduction with a picture */}

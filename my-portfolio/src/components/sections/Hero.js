@@ -1,5 +1,6 @@
 
 import React from 'react';
+import KpLogoFile from '../../data/KP_LOGO.png';
 
 
 const Hero = () => {
@@ -8,15 +9,15 @@ const Hero = () => {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    minHeight: 'calc(80vh - 70px)', // Adjust 70px if your Navbar height is different
+    minHeight: 'calc(80vh - 70px)', 
     textAlign: 'center',
     padding: '2rem',
-    backgroundColor: 'var(--background-light)', // Using variable from your global.css
+    backgroundColor: 'var(--background-light)', 
     borderBottom: '1px solid var(--border-color)',
   };
 
   const headingStyle = {
-    fontSize: 'clamp(2.5rem, 5vw, 3.8rem)', // Responsive font size
+    fontSize: 'clamp(2.5rem, 5vw, 3.8rem)', 
     color: 'var(--text-dark)',
     marginBottom: '1rem',
     fontWeight: '700',
@@ -27,6 +28,15 @@ const Hero = () => {
     color: 'var(--text-secondary-dark)',
     marginBottom: '2rem',
     maxWidth: '700px',
+  };
+
+    const heroImageStyle = {
+    width: '40rem', 
+    height: '25rem', 
+    borderRadius: '2%', 
+    objectFit: 'cover', 
+    marginBottom: '2rem',
+    boxShadow: '0 4px 8px rgba(0,0,0,0.1)', 
   };
 
   const ctaButtonStyle = {
@@ -50,7 +60,18 @@ const Hero = () => {
       <p style={taglineStyle}>
         I'm glad to see you're here! 
       </p>
-      {/* Link this button to your projects page or another relevant section */}
+
+          <img
+        src={KpLogoFile} 
+        style={heroImageStyle}
+        onError={(e) => {
+          // Fallback if the image fails to load
+          e.target.onerror = null; 
+          e.target.src = "https://placehold.co/150x150/E0E0E0/757575?text=Image";
+          e.target.alt = "Placeholder image";
+        }}
+      />
+
       <a href="/projects" style={ctaButtonStyle}
          onMouseEnter={(e) => { e.target.style.backgroundColor = 'navy'; e.target.style.transform = 'translateY(-2px)';}}
          onMouseLeave={(e) => { e.target.style.backgroundColor = 'var(--primary-color)'; e.target.style.transform = 'translateY(0)';}}
