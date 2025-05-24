@@ -2,27 +2,27 @@
 
 .item {
   display: flex;
-  gap: 1.5rem; /* Space between logo and details */
+  gap: 1.5rem; 
   padding: 1.5rem 0;
-  border-bottom: 1px solid var(--border-color, #e0e0e0); /* Use theme variable or fallback */
+  border-bottom: 1px solid var(--border-color, #e0e0e0); 
 }
 
 .item:last-child {
-  border-bottom: none; /* Remove border from the last item in a list */
+  border-bottom: none; 
 }
 
 .logoContainer {
-  flex-shrink: 0; /* Prevent logo from shrinking */
-  width: 80px; /* Fixed width for logo container */
-  height: 80px; /* Fixed height for logo container */
+  flex-shrink: 0; 
+  width: 80px; 
+  height: 80px; 
 }
 
 .logo {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Or 'cover', 'scale-down' depending on logo style */
-  border-radius: var(--border-radius, 8px); /* Rounded corners for logo */
-  background-color: var(--surface-light, #f8f9fa); /* Slight background for non-transparent logos */
+  object-fit: contain; 
+  border-radius: var(--border-radius, 8px); 
+  background-color: var(--surface-light, #f8f9fa); 
   padding: 0.25rem; /* Small padding if logos are tight */
   border: 1px solid var(--border-color, #e0e0e0);
 }
@@ -41,7 +41,7 @@
 .organization {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--primary-color, #007bff); /* Highlight organization with primary color */
+  color: var(--primary-color, #007bff);
   margin-bottom: 0.25rem;
 }
 
@@ -56,7 +56,7 @@
   font-size: 0.95rem;
   color: var(--text-secondary-dark, #5a6268);
   line-height: 1.6;
-  padding-left: 1.25rem; /* Indent bullet points */
+  padding-left: 1.25rem; 
   max-width: 80ch;
 }
 
@@ -64,18 +64,18 @@
   margin-bottom: 0.4rem;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 600px) {
   .item {
     flex-direction: column; /* Stack logo and details on small screens */
-    align-items: flex-start; /* Align items to the start */
+    align-items: flex-start; 
     gap: 1rem;
   }
 
   .logoContainer {
     width: 60px;
     height: 60px;
-    margin-bottom: 0.5rem; /* Space below logo when stacked */
+    margin-bottom: 0.5rem;
   }
 
   .title {

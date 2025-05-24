@@ -1,21 +1,19 @@
 /* src/components/layout/Navbar.css */
 
-/* General Navbar styling */
 .navbar-custom {
-  background-color: var(--surface-light); /* Using variable from your global.css */
+  background-color: var(--surface-light); 
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between; /* Puts logo on left, links on right */
+  justify-content: space-between; 
   align-items: center;
-  border-bottom: 1px solid var(--border-color); /* Using variable */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Softer shadow */
+  border-bottom: 1px solid var(--border-color); 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); 
   position: sticky;
   top: 0;
-  z-index: 1000; /* Ensures navbar stays on top */
-  height: 70px; /* Fixed height for the navbar */
+  z-index: 1000; 
+  height: 70px; 
 }
 
-/* Logo and Title styling */
 .navbar-logo-custom {
   display: flex;
   align-items: center;
@@ -24,65 +22,55 @@
 .navbar-title-custom {
   display: flex;
   align-items: center;
-  color: var(--text-dark); /* Using variable */
+  color: var(--text-dark); 
   text-decoration: none;
-  font-size: 1.5rem; /* Adjust as needed */
+  font-size: 1.5rem; 
   font-weight: 600;
 }
 
 .navbar-logo-img-custom {
-  height: 40px; /* Adjust size as needed */
-  width: auto; /* Maintain aspect ratio */
+  height: 40px; 
+  width: auto; 
   margin-right: 0.75rem;
-  border-radius: 50%; /* Optional: if your logo is circular */
+  border-radius: 50%; 
   object-fit: cover;
 }
 
-/* Navigation Links styling */
 .navbar-links-custom {
-  list-style: none; /* Removes default bullet points */
+  list-style: none; 
   display: flex;
   margin: 0;
   padding: 0;
 }
 
 .navbar-links-custom li {
-  margin-left: 1.5rem; /* Space between links, adjust as needed */
+  margin-left: 1.5rem; 
 }
 
 .navbar-links-custom li a {
-  color: var(--text-secondary-dark); /* Using variable */
+  color: var(--text-secondary-dark); 
   text-decoration: none;
-  font-size: 1rem; /* Adjust as needed */
+  font-size: 1rem; 
   font-weight: 500;
-  padding: 0.5rem 0; /* Vertical padding for easier clicking */
+  padding: 0.5rem 0; 
   position: relative;
   transition: color 0.3s ease;
 }
 
 .navbar-links-custom li a:hover {
-  color: var(--primary-color); /* Using variable */
+  color: var(--primary-color); 
 }
 
-/* Optional: Add an active link style if not using NavLink's activeStyle/activeClassName */
-/* This requires more complex logic or using NavLink from react-router-dom */
-/* .navbar-links-custom li a.active {
-  color: var(--primary-color);
-  font-weight: 700;
-  border-bottom: 2px solid var(--primary-color);
-} */
 
-
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .navbar-custom {
-    flex-direction: column; /* Stack logo and links vertically */
+    flex-direction: column; 
     padding: 0.75rem 1rem;
-    height: auto; /* Allow height to adjust */
+    height: auto; 
   }
 
   .navbar-logo-custom {
-    margin-bottom: 0.75rem; /* Space below logo when stacked */
+    margin-bottom: 0.75rem; 
   }
   
   .navbar-title-custom {
@@ -102,7 +90,6 @@
   }
 
   .navbar-links-custom li {
-    margin-left: 0; /* Remove left margin when stacked */
-    /* font-size: 0.9rem; */ /* Slightly smaller links on mobile */
+    margin-left: 0; 
   }
 }

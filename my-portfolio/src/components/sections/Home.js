@@ -1,44 +1,40 @@
 // src/pages/HomePage.js
 import React from 'react';
-import Hero from './Hero'; // Assuming Hero.js is in the same directory or adjust path
-// You might want to create a dedicated component for updates later
-// import RecentUpdatesSection from '../components/sections/RecentUpdatesSection';
+import Hero from './Hero'; 
 
-// Basic styling for the updates section (can be moved to a CSS file)
 const updatesSectionStyles = {
   padding: '2rem',
   textAlign: 'center',
-  minHeight: '300px', // Adjust as needed
-  borderTop: '1px solid #eee', // Optional: to visually separate from Hero
-  marginTop: '2rem', // Optional: to add space below Hero
+  minHeight: '300px',
+  borderTop: '1px solid #eee', 
+  marginTop: '2rem', 
 };
 
 const updatesListStyles = {
   marginTop: '20px',
   textAlign: 'left',
-  maxWidth: '700px', // Increased width slightly
+  maxWidth: '700px', 
   margin: '20px auto',
 };
 
 const updateItemStyles = {
-  marginBottom: '20px', // Increased space between items
-  paddingBottom: '15px', // Increased padding
-  borderBottom: '1px solid #ddd', // Slightly darker border
+  marginBottom: '20px', 
+  paddingBottom: '15px', 
+  borderBottom: '1px solid #ddd', 
 };
 
 const updateDateStyles = {
   fontWeight: 'bold',
-  color: 'var(--text-dark, #333)', // Use a theme variable if available
+  color: 'var(--text-dark, #333)', 
 };
 
 const updateTextStyles = {
-  fontSize: '1rem', // Slightly larger text
-  color: 'var(--text-secondary-dark, #555)', // Use a theme variable
-  marginTop: '8px', // Increased space between date and text
+  fontSize: '1rem', 
+  color: 'var(--text-secondary-dark, #555)', 
+  marginTop: '8px', 
   lineHeight: '1.6',
 };
 
-// Style for the "Read More" button
 const readMoreButtonStyle = {
   display: 'inline-block',
   marginTop: '10px',
@@ -53,7 +49,6 @@ const readMoreButtonStyle = {
   transition: 'background-color 0.3s ease, color 0.3s ease',
 };
 
-// Hover style for readMoreButton (can be done with CSS :hover too)
 const readMoreButtonHoverStyle = {
   backgroundColor: 'var(--primary-color, #007bff)',
   color: 'var(--text-light, #fff)',
@@ -61,8 +56,6 @@ const readMoreButtonHoverStyle = {
 
 
 const Home = () => {
-  // Content for Recent Updates Section
-  // This could be moved to its own component file for better organization
   const RecentUpdatesSection = () => (
     <section id="recent-updates" style={updatesSectionStyles}>
       <h2>Recent Updates</h2>
@@ -81,7 +74,7 @@ const Home = () => {
             Check out this Op-Ed I wrote for the Portland Press Herald about the dangers of proposed NOAA budget cuts.
           </p>
           <a
-            href="https://www.pressherald.com/2025/04/15/proposed-noaa-cuts-a-serious-issue-for-mainers/" // <-- REPLACE THIS WITH THE ACTUAL URL
+            href="https://www.pressherald.com/2025/04/15/proposed-noaa-cuts-a-serious-issue-for-mainers/" 
             target="_blank"
             rel="noopener noreferrer"
             style={readMoreButtonStyle}
@@ -107,13 +100,8 @@ const Home = () => {
 
   return (
     <div className="homepage-content">
-      {/* Hero Section will be the main visual introduction */}
       <Hero />
-
-      {/* Recent Updates Section will appear below the Hero */}
       <RecentUpdatesSection />
-
-
     </div>
   );
 };

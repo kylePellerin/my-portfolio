@@ -1,8 +1,6 @@
-// src/components/sections/ExperienceItem.js
-// (Or place in a more general 'components' folder if preferred)
 
 import React from 'react';
-import styles from './ExperienceItem.module.css'; // CSS Module for styling
+import styles from './ExperienceItem.module.css'; 
 
 const ExperienceItem = ({ item }) => {
   const { title, organization, logoUrl, imagePlaceholder, dates, descriptionPoints } = item;

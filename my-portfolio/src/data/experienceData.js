@@ -14,9 +14,7 @@ export const experiences = [
     category: 'Education', // Categories: Jobs, Research, Leadership, Awards, Grants
     title: 'Bowdoin College',
     organization: 'Bachelor of Arts in Computer Science and Environmental Studies',
-    // For images in `public` folder:
     logoUrl: BowdoinLogo, 
-    // If importing from `src`: logoUrl: CompanyLogoPlaceholder,
     imagePlaceholder: '',
     dates: 'September 2022 - present',
     descriptionPoints: [
@@ -32,9 +30,7 @@ export const experiences = [
     category: 'Education', // Categories: Jobs, Research, Leadership, Awards, Grants
     title: 'St. Pauls School',
     organization: 'High School Degree',
-    // For images in `public` folder:
     logoUrl: StPaulsLOGO, 
-    // If importing from `src`: logoUrl: CompanyLogoPlaceholder,
     imagePlaceholder: '',
     dates: 'September 2018 - June 2022',
     descriptionPoints: [
@@ -50,9 +46,7 @@ export const experiences = [
     category: 'Work', // Categories: Jobs, Research, Leadership, Awards, Grants
     title: 'GIS Teaching Assistant (Incoming)',
     organization: 'Bowdoin College',
-    // For images in `public` folder:
     logoUrl: BowdoinLogo, 
-    // If importing from `src`: logoUrl: CompanyLogoPlaceholder,
     imagePlaceholder: '',
     dates: 'September 2025 - December 2025',
     descriptionPoints: [
@@ -66,9 +60,7 @@ export const experiences = [
     category: 'Work', // Categories: Jobs, Research, Leadership, Awards, Grants
     title: 'Software Engineering Intern',
     organization: 'onXmaps',
-    // For images in `public` folder:
     logoUrl: onxLOGO, 
-    // If importing from `src`: logoUrl: CompanyLogoPlaceholder,
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
     dates: 'June 2025 - Present',
     descriptionPoints: [
@@ -80,9 +72,7 @@ export const experiences = [
     category: 'Work', // Categories: Jobs, Research, Leadership, Awards, Grants
     title: 'GIS Web App Design Intern',
     organization: 'COBALT Team Zoestra',
-    // For images in `public` folder:
     logoUrl: COBALTLOGO, 
-    // If importing from `src`: logoUrl: CompanyLogoPlaceholder,
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
     dates: 'January 2025 - May 2025',
     descriptionPoints: [
@@ -95,9 +85,7 @@ export const experiences = [
     category: 'Work', // Categories: Jobs, Research, Leadership, Awards, Grants
     title: 'Farm Store Associate',
     organization: 'Dimond Hill Farm',
-    // For images in `public` folder:
     logoUrl: DimondLogo, 
-    // If importing from `src`: logoUrl: CompanyLogoPlaceholder,
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
     dates: 'May 2023 - August 2023',
     descriptionPoints: [
@@ -110,9 +98,7 @@ export const experiences = [
     category: 'Work', // Categories: Jobs, Research, Leadership, Awards, Grants
     title: 'Information Technology Support Staff',
     organization: 'Bowdoin College Information Technology',
-    // For images in `public` folder:
     logoUrl: BowdoinLogo, 
-    // If importing from `src`: logoUrl: CompanyLogoPlaceholder,
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
     dates: 'January 2023 - May 2023',
     descriptionPoints: [
@@ -126,9 +112,7 @@ export const experiences = [
     category: 'Research', // Categories: Jobs, Research, Leadership, Awards, Grants
     title: 'Research Assistant',
     organization: 'Bowdoin College',
-    // For images in `public` folder:
     logoUrl: BowdoinLogo, 
-    // If importing from `src`: logoUrl: CompanyLogoPlaceholder,
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
     dates: 'October 2023 - May 2025',
     descriptionPoints: [
@@ -141,9 +125,7 @@ export const experiences = [
     category: 'Research', // Categories: Jobs, Research, Leadership, Awards, Grants
     title: 'Research Fellow',
     organization: 'Bowdoin College',
-    // For images in `public` folder:
     logoUrl: BowdoinLogo, 
-    // If importing from `src`: logoUrl: CompanyLogoPlaceholder,
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
     dates: 'June 2024 - August 2024',
     descriptionPoints: [
@@ -156,9 +138,7 @@ export const experiences = [
     category: 'Research', // Categories: Jobs, Research, Leadership, Awards, Grants
     title: 'Research Intern',
     organization: 'Northwestern University IDEAS Lab',
-    // For images in `public` folder:
     logoUrl: IDEASLOGO, 
-    // If importing from `src`: logoUrl: CompanyLogoPlaceholder,
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
     dates: 'March 2021 - November 2021',
     descriptionPoints: [
@@ -226,7 +206,7 @@ export const experiences = [
     category: 'Grants and Awards',
     title: 'Fritz C. A. Kollen Grant',
     organization: 'Bowdoin College',
-    logoUrl: BowdoinLogo, // A generic grant/funding icon
+    logoUrl: BowdoinLogo, 
     imagePlaceholder: 'https://placehold.co/80x80/fd7e14/white?text=Grant',
     dates: 'December 2024',
     descriptionPoints: [
@@ -238,7 +218,7 @@ export const experiences = [
     category: 'Grants and Awards',
     title: 'Sokoloff Prize',
     organization: 'St. Pauls School',
-    logoUrl: StPaulsLOGO, // A generic grant/funding icon
+    logoUrl: StPaulsLOGO, 
     imagePlaceholder: 'https://placehold.co/80x80/fd7e14/white?text=Grant',
     dates: 'May 2021',
     descriptionPoints: [
@@ -248,7 +228,6 @@ export const experiences = [
   },
 ];
 
-// Helper function to group experiences by category
 export const getExperiencesByCategory = () => {
   const categories = ['Education','Work', 'Research', 'Leadership', 'Grants and Awards'];
   const grouped = {};

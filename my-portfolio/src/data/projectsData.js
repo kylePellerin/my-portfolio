@@ -1,6 +1,5 @@
 // src/data/projectsData.js
-// This file will hold the data for your projects.
-// Add your actual project details here.
+
 import KpLogoFile from '../data/KP_LOGO.png'; // Path relative to Navbar.js
 import Seagrass from '../data/Seagrass.png';
 import Assess from '../data/Assess.png';
@@ -10,8 +9,7 @@ import AILOGO from '../data/AI_PROJ.png';
 import Explorer from '../data/Explorer.png';
 import NH from '../data/NH.png';
 import IDEAs from '../data/ASEP_POSTER.png';
-// Example structure for project data
-// Example structure for project data
+
 export const projects = [
   {
     id: 1,
@@ -80,7 +78,7 @@ export const projects = [
   },
    {
     id: 4,
-    title: "Finance S&P",
+    title: "S&P Finance",
     category: "CS",
     imageUrl: SPLOGO,
     description: "A website I collaborated to create with a peer. We had the goal of providing financial information to students of all ages. Built on Javascript, CSS, and React.js and deployed using AWS. ",

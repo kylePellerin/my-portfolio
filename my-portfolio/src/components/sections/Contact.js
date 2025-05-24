@@ -1,13 +1,10 @@
 // src/pages/ContactPage.js
-// Create this file in your src/pages/ directory.
 
 import React from 'react';
-import styles from './Contact.module.css'; // We'll create this CSS module
-// Import icons from react-icons, similar to your Footer
+import styles from './Contact.module.css'; 
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 const ContactPage = () => {
-  // Replace with your actual email and social media links
   const yourEmail = "kylepellerin@outlook.com";
   const socialLinks = [
     {
@@ -60,7 +57,6 @@ const ContactPage = () => {
                 rel="noopener noreferrer" 
                 aria-label={social.label}
                 className={styles.socialLink}
-                // Apply hover color dynamically or use CSS
                 onMouseEnter={(e) => e.currentTarget.style.color = social.color}
                 onMouseLeave={(e) => e.currentTarget.style.color = 'var(--primary-color)'}
               >
@@ -72,11 +68,6 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* You could add a simple contact form here later if desired */}
-      {/* <section className={styles.contactFormSection}>
-        <h2>Or Send a Quick Message</h2>
-        <form> ... your form fields ... </form>
-      </section> */}
     </div>
   );
 };

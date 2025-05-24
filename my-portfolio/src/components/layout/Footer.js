@@ -45,7 +45,6 @@ const Footer = () => {
 
   const currentYear = new Date().getFullYear();
 
-  // Replace with your actual usernames/links
   const socialLinks = [
     {
       href: "https://github.com/kylePellerin",
@@ -59,13 +58,7 @@ const Footer = () => {
       label: "LinkedIn",
       hoverColor: "#0A66C2" // LinkedIn blue
     }
-    // Add more social links if needed
-    // {
-    //   href: "https://your-other-site.com",
-    //   icon: <FaGlobe style={socialIconStyle} />,
-    //   label: "Website",
-    //   hoverColor: "var(--secondary-color)"
-    // }
+
   ];
 
   return (
@@ -91,10 +84,7 @@ const Footer = () => {
           ))}
         </div>
         
-        {/* You can add more links or information here if needed */}
-        {/* <p style={textStyle}>
-          <a href="/privacy-policy" style={{color: 'var(--primary-color)'}}>Privacy Policy</a>
-        </p> */}
+
       </div>
     </footer>
   );

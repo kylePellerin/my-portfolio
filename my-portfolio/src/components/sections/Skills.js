@@ -1,10 +1,8 @@
 // src/pages/SkillsPage.js
-// Create this file in your src/pages/ directory.
 
 import React from 'react';
-import styles from './Skills.module.css'; // We'll create this CSS module
+import styles from './Skills.module.css'; 
 
-// Define your skills data directly in the component
 const skillCategories = [
   {
     categoryName: "Programming & Computer Science",
@@ -26,12 +24,12 @@ const skillCategories = [
   {
     categoryName: "Agricultural and Practical",
     skills: ["Gardening", "Mowing", "Landscaping", "Plant Breeding", "Raising Livestock", "Beekeeping", "Bed Edging", "Lawn Care", "Haying", "Basic Construction"]
-    // Added cooking & gardening as per your logo themes, adjust as you see fit!
+ 
   },
   {
     categoryName: "Hobbies and Intrests",
     skills: ["Ski Racing", "DJing", "Cooking", "Fishing", "Ski Touring", "Hiking", "Conservation", "Machine Learning", "Climate Change","Data Science" ,"Community Resilience" ]
-    // Added cooking & gardening as per your logo themes, adjust as you see fit!
+
   }
 ];
 

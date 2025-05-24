@@ -1,14 +1,14 @@
 /* src/components/sections/ProjectCard.module.css */
 
 .card {
-  background-color: var(--surface-light); /* Using variable from global.css */
-  border-radius: var(--border-radius); /* Using variable */
-  box-shadow: var(--box-shadow); /* Using variable */
-  overflow: hidden; /* Ensures image corners are rounded with the card */
+  background-color: var(--surface-light); 
+  border-radius: var(--border-radius); 
+  box-shadow: var(--box-shadow); 
+  overflow: hidden; 
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%; /* Make card take full height of grid cell */
+  height: 100%; 
 }
 
 .card:hover {
@@ -27,7 +27,7 @@
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Allows content to fill remaining space */
+  flex-grow: 1; 
 }
 
 .category {
@@ -35,20 +35,20 @@
   padding: 0.25rem 0.6rem;
   font-size: 0.75rem;
   font-weight: 600;
-  border-radius: 15px; /* Pill shape */
+  border-radius: 15px; 
   margin-bottom: 0.75rem;
-  align-self: flex-start; /* Align to the left */
+  align-self: flex-start; 
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .category.gis {
-  background-color: rgba(var(--primary-color-rgb), 0.15); /* Lighter primary color */
+  background-color: rgba(var(--primary-color-rgb), 0.15); 
   color: var(--primary-color);
 }
 
 .category.cs {
-  background-color: rgba(var(--secondary-color-rgb), 0.15); /* Lighter secondary color */
+  background-color: rgba(var(--secondary-color-rgb), 0.15); 
   color: var(--secondary-color);
 }
 
@@ -64,7 +64,7 @@
   color: var(--text-secondary-dark);
   line-height: 1.6;
   margin-bottom: 1rem;
-  flex-grow: 1; /* Allows description to take available space */
+  flex-grow: 1; 
 }
 
 .tags {
@@ -75,8 +75,8 @@
 }
 
 .tag {
-  background-color: #e9ecef; /* Light gray for tags */
-  color: #495057; /* Darker gray text for tags */
+  background-color: #e9ecef; 
+  color: #495057; 
   padding: 0.25rem 0.75rem;
   border-radius: var(--border-radius);
   font-size: 0.75rem;
@@ -84,9 +84,9 @@
 }
 
 .links {
-  margin-top: auto; /* Pushes links to the bottom of the card */
+  margin-top: auto; 
   display: flex;
-  gap: 0.75rem; /* Space between buttons */
+  gap: 0.75rem; 
 }
 
 .linkButton {

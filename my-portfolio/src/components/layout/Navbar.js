@@ -1,12 +1,9 @@
 // src/components/layout/Navbar.js
 import React, { useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
-import './Navbar.css'; // Ensure this CSS file exists and is linked
+import './Navbar.css'; 
 
-// Import your logo image from the src/components/data/ folder
-// IMPORTANT: Adjust 'KP-LOGO.png' if your actual filename is different.
-// This path assumes Navbar.js is in src/components/layout/ and the logo is in src/components/data/
-import KpLogoFile from '../../data/KP_LOGO.png'; // Path relative to Navbar.js
+import KpLogoFile from '../../data/KP_LOGO.png';
 
 // ScrollToTop component: Scrolls window to top on route change
 const ScrollToTop = () => {
@@ -14,19 +11,17 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [pathname]); // Dependency array: effect runs when pathname changes
+  }, [pathname]); 
 
-  return null; // This component does not render anything
+  return null; 
 };
 
-// Component to display the imported logo
 const KpLogoImage = () => {
   return (
     <img 
-      src={KpLogoFile} // Use the imported image variable here
-      alt="Kyle Pellerin Portfolio Logo" // Descriptive alt text
-      className="navbar-logo-img-custom" // Use the class from Navbar.css
-      // Optional: Add an onError handler for a fallback if the image somehow still fails
+      src={KpLogoFile} 
+      alt="Kyle Pellerin Portfolio Logo" 
+      className="navbar-logo-img-custom" 
       onError={(e) => { 
         e.target.style.display = 'none'; // Hide the broken image icon
         const parent = e.target.parentNode;
