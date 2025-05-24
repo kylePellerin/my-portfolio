@@ -18,8 +18,8 @@
 
 .cardImage {
   width: 100%;
-  height: 220px; /* Fixed height for images */
-  object-fit: cover; /* Cover ensures image fills space without distortion */
+  height: 220px;
+  object-fit: scale-down;
   border-bottom: 1px solid var(--border-color);
 }
 

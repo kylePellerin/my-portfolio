@@ -1,7 +1,4 @@
 .projectsSection {
-  /* If this is a section within a page, padding might come from a parent or global styles.
-     If it's acting as a full page content, max-width and centering are good.
-  */
   max-width: var(--container-max-width, 1200px); 
   margin: 0 auto; /* Center the section */
   padding: 2rem 0rem; /* Standard section padding */
