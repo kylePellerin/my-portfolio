@@ -84,7 +84,7 @@ const Hero = () => {
          onMouseEnter={(e) => { e.target.style.backgroundColor = 'navy'; e.target.style.transform = 'translateY(-2px)';}}
          onMouseLeave={(e) => { e.target.style.backgroundColor = 'var(--primary-color)'; e.target.style.transform = 'translateY(0)';}}
       >
-        FIXXXXXXX
+        Download Resume
       </a>
     </section>
   );

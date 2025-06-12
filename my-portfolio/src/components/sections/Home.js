@@ -60,6 +60,27 @@ const Home = () => {
     <section id="recent-updates" style={updatesSectionStyles}>
       <h2>Recent Updates</h2>
       <div style={updatesListStyles}>
+        <div style={updateItemStyles}>
+          <p style={updateDateStyles}>6/11: Topsham NAP Article</p>
+          <p style={updateTextStyles}>
+            Check out this article written about the work my peers and I did for the Town of Topsham’s Natural Areas Plan this past spring!          </p>
+          <a
+          href='https://www.bowdoin.edu/news/2025/06/advanced-gis-students-boost-natural-areas-plan-for-topsham.html'
+            target="_blank"
+            rel="noopener noreferrer"
+            style={readMoreButtonStyle}
+            onMouseEnter={(e) => {
+              e.target.style.backgroundColor = readMoreButtonHoverStyle.backgroundColor;
+              e.target.style.color = readMoreButtonHoverStyle.color;
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.backgroundColor = readMoreButtonStyle.backgroundColor;
+              e.target.style.color = readMoreButtonStyle.color;
+            }}
+          >
+            Read Article
+          </a>
+        </div>
 
         <div style={updateItemStyles}>
           <p style={updateDateStyles}>5/12: Completion of my work with COBALT Team ZOESTRA ... for now</p>

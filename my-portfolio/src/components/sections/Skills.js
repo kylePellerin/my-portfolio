@@ -6,11 +6,11 @@ import styles from './Skills.module.css';
 const skillCategories = [
   {
     categoryName: "Programming & Computer Science",
-    skills: [ "Python", "Java", "C", "R", "JavaScript", "CSS", "React.js", "Idris 2", "Numpy", "Pandas", "AWS", "Scikit-Learn", "Vercel"]
+    skills: [ "Python", "Java", "C", "R", "JavaScript", "CSS", "React.js", "Idris 2", "Swift", "C++", "AWS", "Numpy", "Vercel", "AppleUI" ]
   },
   {
     categoryName: "GIS & Mapping",
-    skills: ["ArcGIS Pro", "ArcGIS Online", "Leaflet (R)", "SF (R)", "Storymaps", "Geodatabases", "Geo-Consulting", "ArcGIS Dashboard", "Census Data", "Cartographic Design", "Excel" ]
+    skills: ["ArcGIS Pro", "ArcGIS Online", "Leaflet (R)", "SF (R)", "Storymaps", "Geodatabases", "Geo-Consulting", "Apple MapKit", "Census Data", "Cartographic Design", "Excel" ]
   },
    {
     categoryName: "Technical Skills",

@@ -98,8 +98,8 @@ export const projects = [
     tags: ["ArcGIS Pro", "Geodatabases", "Consulting", "Cartography"],
     liveLink: "https://youtu.be/lMm_G7uG4No?si=2wM7UQPjt3L8F_HM&t=1427",
     liveLinkName: "Watch the Presentation",
-    sourceLink: null, 
-    sourceLinkName: "",
+    sourceLink: "https://www.bowdoin.edu/news/2025/06/advanced-gis-students-boost-natural-areas-plan-for-topsham.html", 
+    sourceLinkName: "Read Article",
     imagePlaceholder: "https://placehold.co/600x400/6f42c1/white?text=Algorithm+Visualizer"
   },
      {
