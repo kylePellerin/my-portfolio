@@ -1,7 +1,6 @@
 
 import React from 'react';
 import KpLogoFile from '../../data/KP_LOGO.png';
-import Resume from '../../data/resume.pdf';
 
 
 const Hero = () => {
@@ -81,7 +80,7 @@ const Hero = () => {
       </a>
       <p></p>
       <p></p>
-     <a href={Resume} download="resume.pdf"style={ctaButtonStyle}
+     <a href='/resume.pdf' download="resume.pdf"style={ctaButtonStyle}
          onMouseEnter={(e) => { e.target.style.backgroundColor = 'navy'; e.target.style.transform = 'translateY(-2px)';}}
          onMouseLeave={(e) => { e.target.style.backgroundColor = 'var(--primary-color)'; e.target.style.transform = 'translateY(0)';}}
       >
