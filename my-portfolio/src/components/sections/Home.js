@@ -1,6 +1,7 @@
 // src/pages/HomePage.js
 import React from 'react';
-import Hero from './Hero'; 
+import Hero from './Hero';
+import { Analytics } from "@vercel/analytics/react" 
 
 const updatesSectionStyles = {
   padding: '2rem',
@@ -116,6 +117,7 @@ const Home = () => {
           Check back soon for more updates!
         </p>
       </div>
+      <Analytics />
     </section>
   );
 

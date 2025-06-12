@@ -13,6 +13,8 @@ import Projects from './components/sections/Projects';
 import Skills from './components/sections/Skills'; 
 import Contact from './components/sections/Contact';
 import Experience from './components/sections/ExperiencePage';
+import { Analytics } from "@vercel/analytics/react"
+
 
 function App() {
   return (
