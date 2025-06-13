@@ -18,10 +18,10 @@ export const experiences = [
     imagePlaceholder: '',
     dates: 'September 2022 - present',
     descriptionPoints: [
-      'Expected graduation: May 2026',
-      'Computer science relevant coursework:  Data Structures, Algorithms, Artificial Intelligence, Computer Systems', 
-      'Environmental Studies (GIS) relevant coursework: Applications in GIS and Remote Sensing, Nature of Data, Building Resilient Communities ',
-      'Attended the School For International Training during the fall of my junior year to study abroad in Iceland'
+      'Expected graduation: May 2026.',
+      'Computer science relevant coursework:  Data Structures, Algorithms, Artificial Intelligence, Computer Systems.', 
+      'Environmental Studies (GIS) relevant coursework: Applications in GIS and Remote Sensing, Nature of Data, Building Resilient Communities. ',
+      'Attended the School For International Training during the fall of my junior year to study abroad in Iceland.'
 
     ],
   },
@@ -35,7 +35,7 @@ export const experiences = [
     dates: 'September 2018 - June 2022',
     descriptionPoints: [
       'Graduated with honors in the humanities and sciences, as well as with honors for being selected to be a part of the Applied Science and Engineering Program.', 
-      'Activities: Alpine Ski Team, Crew, Hillel Society, Dorm Proctor'
+      'Activities: Alpine Ski Team, Crew, Hillel Society, Dorm Proctor.'
       
     ],
   },
