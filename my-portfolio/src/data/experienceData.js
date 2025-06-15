@@ -28,7 +28,7 @@ export const experiences = [
      {
     id: 'edu3',
     category: 'Education', // Categories: Jobs, Research, Leadership, Awards, Grants
-    title: 'St. Pauls School',
+    title: "St. Paul's School",
     organization: 'High School Degree',
     logoUrl: StPaulsLOGO, 
     imagePlaceholder: '',
@@ -118,8 +118,8 @@ export const experiences = [
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
     dates: 'October 2023 - May 2025',
     descriptionPoints: [
-      'Established a quantitative data analysis metric for evaluating the effectiveness of the Maine Governor`s Office of Policy and Innovation for the Future`s Community Resilience Program.',
-      'Researched the relationship between municipalities` ability to apply for grants, expand their digital capacity, and increase community resilience. Presented findings at the American Association of Geographers conference.'
+      "Established a quantitative data analysis metric for evaluating the effectiveness of the Maine Governor's Office of Policy and Innovation for the Future's Community Resilience Program.",
+      "Researched the relationship between municipalities' ability to apply for grants, expand their digital capacity, and increase community resilience. Presented findings at the American Association of Geographers conference."
     ],
   },
     {
@@ -146,7 +146,7 @@ export const experiences = [
     descriptionPoints: [
       'Evaluated the strength of multiple reinforcement learning algorithms on their ability to create more energy-efficient integrated HVAC systems.',
       'Condensed and interpreted data sets, worked within the Ubuntu OS, and presented findings in weekly team meetings.',
-      'Accepted into St. Pauls School Honors Applied Science and Engineering Program (ASEP).',
+      "Accepted into St. Paul's School Honors Applied Science and Engineering Program (ASEP).",
       'Authored and presented a paper and poster on my research results concluding that Deep Q Networks were more effective than Soft Actor Critic models at learning to efficiently control HVAC systems.'
     ],
   },
@@ -180,13 +180,13 @@ export const experiences = [
     id: 'lead3',
     category: 'Leadership',
     title: 'Head',
-    organization: 'St. Pauls School Hillel Society',
+    organization: "St. Paul's School Hillel Society",
     logoUrl: StPaulsLOGO,
     imagePlaceholder: 'https://placehold.co/80x80/ffc107/black?text=Lead',
     dates: 'September 2020 - June 2022',
     descriptionPoints: [
       'Helped lead and coordinate Jewish life on campus.', 
-      'Planned both in-society and entire school events, delivered educational talks, helped promote DEI initiatives, and assisted in the establishment of St. Pauls School’s first ever multi-faith space. '
+      "Planned both in-society and entire school events, delivered educational talks, helped promote DEI initiatives, and assisted in the establishment of St. Paul's School's first ever multi-faith space."
     ],
   },
       //Awards and Grants ****************************************************************************************************************
@@ -219,12 +219,12 @@ export const experiences = [
     id: 'grant1',
     category: 'Grants and Awards',
     title: 'Sokoloff Prize',
-    organization: 'St. Pauls School',
+    organization: "St. 'Paul's School",
     logoUrl: StPaulsLOGO, 
     imagePlaceholder: 'https://placehold.co/80x80/fd7e14/white?text=Grant',
     dates: 'May 2021',
     descriptionPoints: [
-      'Received runner up in this annual grant given by St. Pauls School which enables students to work on community service projects of their design. ',
+      "Received runner up in this annual grant given by St. Paul's School which enables students to work on community service projects of their design. ",
       'Used funds to assist with a plant drive and community garden for my pre-existing  Harvest of Hopkinton Program.'
     ],
   },
