@@ -1,6 +1,7 @@
 
 import React from 'react';
 import KpLogoFile from '../../data/KP_LOGO.png';
+import KPPicture from '../../data/head_shot.jpg';
 
 
 const Hero = () => {
@@ -62,7 +63,7 @@ const Hero = () => {
       </p>
 
           <img
-        src={KpLogoFile} 
+        src={KPPicture} 
         style={heroImageStyle}
         onError={(e) => {
           // Fallback if the image fails to load
