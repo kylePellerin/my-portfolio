@@ -90,7 +90,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div style={updateItemStyles}>
+        {/* <div style={updateItemStyles}>
           <p style={updateDateStyles}>4/21: Op-Ed</p>
           <p style={updateTextStyles}>
             Check out this Op-Ed I wrote for the Portland Press Herald about the dangers of proposed NOAA budget cuts.
@@ -111,12 +111,14 @@ const Home = () => {
           >
             Read Op-Ed
           </a>
-        </div>
+        </div> */}
+        
         {/* Add more updates here */}
         <p style={{ textAlign: 'center', marginTop: '30px', fontStyle: 'italic', color: '#777' }}>
           Check back soon for more updates!
         </p>
       </div>
+
       <Analytics />
     </section>
   );
