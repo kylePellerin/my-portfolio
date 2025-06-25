@@ -64,7 +64,7 @@ export const experiences = [
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
     dates: 'June 2025 - Present',
     descriptionPoints: [
-      "Engineered a dynamic authentication flow using Swift's modern concurrency (async/await) to securely authorize all data requests from a proprietary C++ map engine, replacing a legacy static token system.",
+      "Engineered a dynamic authentication flow using Swift's modern concurrency (async/await) to securely authorize all data requests from internal mapping tools, replacing a legacy static token system.",
       'Resolved critical C++ linker errors in the bgfx graphics build pipeline, unblocking team development.'
 
     ],
