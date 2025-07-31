@@ -18,7 +18,7 @@ export const projects = [
     imageUrl: Assess, 
     description: " While studying abroad in Iceland I was asked by the Icelandic Forest Service to create them a tool to help identify the best (as measured by potential carbon sequestration) afforestation locations in the Isafjord region of the country. My research presented in this paper has helped guide the region's government funded tree plantings and won an award for outstanding paper for which it will be published in the School for International Training’s bi-annual journal.  ",
     tags: ["ArcGIS Pro", "Research", "Climate", "Consulting"], 
-    liveLink: "https://drive.google.com/file/d/1Ps5UPz3S6lBvMl5xc3PaA3UEfmzM2Cz4/view?usp=sharing", 
+    liveLink: "https://digitalcollections.sit.edu/icc2/3/", 
     liveLinkName: "Read Paper",
     sourceLink: null, 
     sourceLinkName: "test2",
