@@ -44,13 +44,13 @@ export const experiences = [
      {
     id: 'job1',
     category: 'Work', // Categories: Jobs, Research, Leadership, Awards, Grants
-    title: 'GIS Teaching Assistant (Incoming)',
+    title: 'GIS Teaching Assistant',
     organization: 'Bowdoin College',
     logoUrl: BowdoinLogo, 
     imagePlaceholder: '',
-    dates: 'September 2025 - December 2025',
+    dates: 'August 2025 - December 2025',
     descriptionPoints: [
-      'Incoming teaching assistant for the "Building Resilient Communities" GIS Course.', 
+      'Teaching assistant for the "Building Resilient Communities" GIS Course.', 
       'Responsibilities include facilitating the learning process through assisting teaching the course, independent office hours to assist students on assignments, and serving as a first point of contact for the students.'
 
     ],
