@@ -6,7 +6,7 @@ import styles from './Skills.module.css';
 const skillCategories = [
   {
     categoryName: "Programming & Computer Science",
-    skills: [ "Python", "Java", "C", "R", "JavaScript", "CSS", "React.js", "Idris 2", "Swift", "C++", "AWS", "Numpy", "Vercel", "AppleUI" ]
+    skills: [ "Python", "Java", "C", "R", "JavaScript", "CSS", "React.js", "Idris 2", "Swift", "C++", "AWS", "GGplot", "Vercel", "SwiftUI" ]
   },
   {
     categoryName: "GIS & Mapping",

@@ -7,7 +7,7 @@ import IDEASLOGO from '../data/IDEAS_LOGO.png'
 import StPaulsLOGO from '../data/St.PaulsLOGO.png'
 import MEGUGLOGO from '../data/MEGUG_LOGO.png'
 import _Harvest_LOGO from '../data/Shared_Harvest_logo.png'
-import Topsham from '../data/Topsham_ME_Logo.png'
+import Topsham from '../data/topsham-logo.png'
 
 export const experiences = [
    {
