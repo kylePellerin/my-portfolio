@@ -7,6 +7,7 @@ import IDEASLOGO from '../data/IDEAS_LOGO.png'
 import StPaulsLOGO from '../data/St.PaulsLOGO.png'
 import MEGUGLOGO from '../data/MEGUG_LOGO.png'
 import _Harvest_LOGO from '../data/Shared_Harvest_logo.png'
+import Topsham from '../data/Topsham_ME_Logo.png'
 
 export const experiences = [
    {
@@ -69,10 +70,23 @@ export const experiences = [
 
     ],
   },
+    {
+    id: 'job6',
+    category: 'Work', // Categories: Jobs, Research, Leadership, Awards, Grants
+    title: 'GIS Consultant',
+    organization: 'Town of Topsham Maine',
+    logoUrl: Topsham,
+    imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
+    dates: 'February 2025 - May 2025',
+    descriptionPoints: [
+      'Executed comprehensive spatial analysis using ArcGIS to update the town\'s key environmental health and safety and water quality indices. Delivered modernized and accurate maps to inform future zoning practices.',
+      'Reestablished their data inventory. Presented findings and a comprehensive report at a public town hall meeting.'
+    ],
+  },
   {
     id: 'job3',
     category: 'Work', // Categories: Jobs, Research, Leadership, Awards, Grants
-    title: 'GIS Web App Design Intern',
+    title: 'Software Engineering Intern: GIS Web App Design',
     organization: 'COBALT Team Zoestra',
     logoUrl: COBALTLOGO, 
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
