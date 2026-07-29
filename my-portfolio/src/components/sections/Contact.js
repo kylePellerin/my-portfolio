@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styles from './Contact.module.css'; 
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const ContactPage = () => {
   const yourEmail = "kylepellerin@outlook.com";

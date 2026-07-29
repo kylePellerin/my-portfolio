@@ -2,7 +2,7 @@
 import React from 'react';
 // Import icons from react-icons
 // FaGithub, FaLinkedin, FaTwitter are examples from Font Awesome
-import { FaGithub, FaLinkedin, FaTwitter, FaGlobe } from 'react-icons/fa'; // Added FaGlobe for a generic website
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 // Optional: If you want to use CSS Modules for Footer specific styles
 // import styles from './Footer.module.css';

@@ -34,7 +34,7 @@ const AboutPage = () => {
         <div className={styles.imageBlock}>
           <img
             src={me} 
-            alt="A picture of [Your Name]"
+            alt="Kyle Pellerin"
             className={styles.profileImage}
             onError={(e) => { e.target.src = 'https://placehold.co/400x400/007bff/white?text=Your+Image+1'; }}
           />
