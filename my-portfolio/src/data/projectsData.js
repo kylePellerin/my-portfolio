@@ -10,6 +10,10 @@ import Explorer from '../data/Explorer.png';
 import NH from '../data/NH.png';
 import IDEAs from '../data/ASEP_POSTER.png';
 
+import FarmAssistLogo from '../data/FarmAssist.jpg';
+import FaceToolImg from '../data/FaceTool.svg';
+import CafeAppImg from '../data/CafeApp.svg';
+
 export const projects = [
   {
     id: 1,
@@ -36,6 +40,45 @@ export const projects = [
     sourceLink: null, 
     sourceLinkName: "",
     imagePlaceholder: "https://placehold.co/600x400/6f42c1/white?text=Algorithm+Visualizer"
+  },
+  {
+    id: 10,
+    title: "FarmAssist",
+    category: "GIS",
+    imageUrl: FarmAssistLogo,
+    description: "An award-winning app I helped build at the Esri 2026 Intern Hackathon. FarmAssist is a cross-platform farm field monitoring app built with .NET MAUI and the ArcGIS Maps SDK for .NET. It combines interactive field mapping, AI-assisted crop incident reporting (a photo or plain-language symptoms are classified with Azure OpenAI GPT-4o), spatial risk and disease-spread modeling using geodesic threat zones, and targeted neighbor-farm alerts. A single crop diagnosis becomes the input to a spatial model that identifies which nearby fields and farms could be at risk next.",
+    tags: ["C#", ".NET MAUI", "ArcGIS SDK", "Azure OpenAI", "Hackathon"],
+    liveLink: "https://devpost.com/software/arcalert",
+    liveLinkName: "Devpost",
+    sourceLink: "https://github.com/krish0309/KoiPonders",
+    sourceLinkName: "Source Code",
+    imagePlaceholder: "https://placehold.co/600x400/007bff/white?text=FarmAssist"
+  },
+  {
+    id: 11,
+    title: "Bowdoin Face Generator & Classifier",
+    category: "CS",
+    imageUrl: FaceToolImg,
+    description: "A deep learning computer vision tool that shows you what you might look like as a Bowdoin student, and can classify input faces to do the same. I trained generative models, including a DCGAN and a conditional denoising diffusion model (DDPM), fine-tuned on face datasets, alongside a face classifier, and wrapped everything in a simple web interface. Built in Python with PyTorch.",
+    tags: ["Python", "PyTorch", "Deep Learning", "GANs", "Computer Vision"],
+    liveLink: null,
+    liveLinkName: "",
+    sourceLink: "https://github.com/kylePellerin/DL-final",
+    sourceLinkName: "Source Code",
+    imagePlaceholder: "https://placehold.co/600x400/6f42c1/white?text=Bowdoin+Face+CV"
+  },
+  {
+    id: 12,
+    title: "Bowdoin Café App",
+    category: "CS",
+    imageUrl: CafeAppImg,
+    description: "A full-stack web application I built with a team for Bowdoin's café as a course final project. Developed in Ruby on Rails with an HTML/JavaScript front end and containerized with Docker, the app provides a digital storefront for browsing the café's offerings and placing orders.",
+    tags: ["Ruby on Rails", "Ruby", "HTML", "JavaScript", "Docker"],
+    liveLink: null,
+    liveLinkName: "",
+    sourceLink: "https://github.com/kylePellerin/PPL-Final",
+    sourceLinkName: "Source Code",
+    imagePlaceholder: "https://placehold.co/600x400/28a745/white?text=Bowdoin+Cafe+App"
   },
      {
     id: 7,
@@ -107,7 +150,7 @@ export const projects = [
     title: "ASEP Research",
     category: "CS",
     imageUrl: IDEAs,
-    description: "As part of getting accepted into the St. Pauls School Applied Science and Engineering Program (ASEP), each student was tasked with doing a research based internship during the summer before their senior year and then continuing the research for the fall term before finally presenting to the community at large. I worked with the Northwestern based IDEAS lab researching different deep learning algorithms ability to efficiently control HVAC systems in virtual building environments. " ,
+    description: "As part of getting accepted into the St. Paul's School Applied Science and Engineering Program (ASEP), each student was tasked with doing a research based internship during the summer before their senior year and then continuing the research for the fall term before finally presenting to the community at large. I worked with the Northwestern based IDEAS lab researching different deep learning algorithms ability to efficiently control HVAC systems in virtual building environments. " ,
     tags: ["Python", "AI", "Deep Learning", "Research"],
     liveLink: "https://sps.myschoolapp.com/ftpimages/36/download/download_6410783.pdf",
     liveLinkName: "Poster",

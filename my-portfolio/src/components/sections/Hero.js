@@ -81,7 +81,7 @@ const Hero = () => {
       </a>
       <p></p>
       <p></p>
-     <a href='/Pellerin_resume.pdf' download="Pellerin_resume.pdf"style={ctaButtonStyle}
+     <a href='/Kyle_Pellerin_Resume.pdf' download="Kyle_Pellerin_Resume.pdf" style={ctaButtonStyle}
          onMouseEnter={(e) => { e.target.style.backgroundColor = 'navy'; e.target.style.transform = 'translateY(-2px)';}}
          onMouseLeave={(e) => { e.target.style.backgroundColor = 'var(--primary-color)'; e.target.style.transform = 'translateY(0)';}}
       >

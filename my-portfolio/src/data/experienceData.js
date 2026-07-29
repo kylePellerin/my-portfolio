@@ -43,13 +43,26 @@ export const experiences = [
   //Work ************************************************************************************************************************
 
      {
+    id: 'job0',
+    category: 'Work', // Categories: Jobs, Research, Leadership, Awards, Grants
+    title: 'Software Engineering Intern',
+    organization: 'Esri',
+    logoUrl: 'https://placehold.co/80x80/007bff/white?text=Esri', // TODO: replace with an Esri logo added to src/data/
+    imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
+    dates: 'June 2026 - September 2026',
+    descriptionPoints: [
+      'Developed an ArcGIS Pro Python toolbox and server-based Enterprise widget for rapid semantic search of Oriented Imagery, adding prompt-driven object segmentation (Grounded-SAM) and automated, deduplicated feature class output.',
+      "Selected as an Intern Hackathon Finalist and awarded People's Choice.",
+    ],
+  },
+     {
     id: 'job1',
     category: 'Work', // Categories: Jobs, Research, Leadership, Awards, Grants
     title: 'GIS Teaching Assistant',
     organization: 'Bowdoin College',
     logoUrl: BowdoinLogo, 
     imagePlaceholder: '',
-    dates: 'August 2025 - December 2025',
+    dates: 'August 2025 - May 2026',
     descriptionPoints: [
       'Teaching assistant for the "Building Resilient Communities" GIS Course.', 
       'Responsibilities include facilitating the learning process through assisting teaching the course, independent office hours to assist students on assignments, and serving as a first point of contact for the students.'
@@ -60,13 +73,14 @@ export const experiences = [
     id: 'job2',
     category: 'Work', // Categories: Jobs, Research, Leadership, Awards, Grants
     title: 'Software Engineering Intern',
-    organization: 'onXmaps',
+    organization: 'onX Maps',
     logoUrl: onxLOGO, 
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
-    dates: 'June 2025 - Present',
+    dates: 'June 2025 - August 2025',
     descriptionPoints: [
-      "Engineered a dynamic authentication flow using Swift's modern concurrency (async/await) to securely authorize all data requests from internal mapping tools, replacing a legacy static token system.",
-      'Resolved critical C++ linker errors in the bgfx graphics build pipeline, unblocking team development.'
+      'Engineered a Swift-based authentication flow to securely authorize data requests, replacing the legacy token system.',
+      'Designed and implemented a dynamic terrain filtering tool featuring a custom SwiftUI interface, enabling users to generate and apply real-time map styling layers based on elevation, slope, and aspect criteria.',
+      'Presented work at engineering demo days. Finished in the top 3% of the onX Summer App Challenge.'
 
     ],
   },
@@ -92,7 +106,7 @@ export const experiences = [
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
     dates: 'January 2025 - May 2025',
     descriptionPoints: [
-      'Designed an R shiny based web app to model the shifting distributions of eelgrass in Casco Bay, Maine, over the past 30 years to assist with conservation and research efforts.',
+      'Designed an R Shiny-based web app to model the shifting distributions of eelgrass in Casco Bay, Maine, over the past 30 years to assist with community-based conservation and research efforts.',
       'Collaborated with stakeholders to create and implement a data upload system for the app, which employs user-collected field data to accurately monitor real-time dynamics in the eelgrass beds.'
     ],
   },
@@ -130,7 +144,7 @@ export const experiences = [
     organization: 'Bowdoin College',
     logoUrl: BowdoinLogo, 
     imagePlaceholder: 'https://placehold.co/80x80/007bff/white?text=Job',
-    dates: 'October 2023 - May 2025',
+    dates: 'October 2023 - May 2026',
     descriptionPoints: [
       "Established a quantitative data analysis metric for evaluating the effectiveness of the Maine Governor's Office of Policy and Innovation for the Future's Community Resilience Program.",
       "Researched the relationship between municipalities' ability to apply for grants, expand their digital capacity, and increase community resilience. Presented findings at the American Association of Geographers conference."
@@ -226,14 +240,14 @@ export const experiences = [
     imagePlaceholder: 'https://placehold.co/80x80/fd7e14/white?text=Grant',
     dates: 'December 2024',
     descriptionPoints: [
-      'Received this grant to extend my stay in Iceland where I had been studying abroad for the fall term of my junior year. During this extension I worked on a collaborative multimedia project documenting the experience of performing research in Icelands far north.'
+      "Received this grant to extend my stay in Iceland where I had been studying abroad for the fall term of my junior year. During this extension I worked on a collaborative multimedia project documenting the experience of performing research in Iceland's far north."
     ],
   },
   {
     id: 'grant1',
     category: 'Grants and Awards',
     title: 'Sokoloff Prize',
-    organization: "St. 'Paul's School",
+    organization: "St. Paul's School",
     logoUrl: StPaulsLOGO, 
     imagePlaceholder: 'https://placehold.co/80x80/fd7e14/white?text=Grant',
     dates: 'May 2021',

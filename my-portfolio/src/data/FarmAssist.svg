@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="FarmAssist logo">
+  <defs>
+    <clipPath id="fa-round">
+      <rect x="24" y="24" width="464" height="464" rx="96"/>
+    </clipPath>
+  </defs>
+  <rect x="8" y="8" width="496" height="496" rx="120" fill="#0a0f0b"/>
+  <g clip-path="url(#fa-round)">
+    <rect x="24" y="24" width="232" height="232" fill="#17281c"/>
+    <rect x="256" y="24" width="232" height="232" fill="#1c3524"/>
+    <rect x="24" y="256" width="232" height="232" fill="#142219"/>
+    <rect x="256" y="256" width="232" height="232" fill="#182c1e"/>
+    <g fill="none" stroke="#2f7d4e" stroke-width="2" opacity="0.45">
+      <circle cx="150" cy="120" r="45"/>
+      <circle cx="150" cy="120" r="80"/>
+      <circle cx="150" cy="120" r="115"/>
+      <circle cx="150" cy="120" r="150"/>
+    </g>
+    <g stroke="#2f7d4e" stroke-width="3" opacity="0.4" stroke-linecap="round">
+      <line x1="300" y1="392" x2="452" y2="392"/>
+      <line x1="300" y1="408" x2="452" y2="408"/>
+      <line x1="300" y1="424" x2="452" y2="424"/>
+      <line x1="300" y1="440" x2="452" y2="440"/>
+    </g>
+    <g fill="#37d07f" fill-opacity="0.08" stroke="#37d07f" stroke-width="6" stroke-linejoin="round">
+      <rect x="110" y="130" width="150" height="150" rx="16" transform="rotate(-18 185 205)"/>
+      <rect x="150" y="180" width="170" height="170" rx="18" transform="rotate(12 235 265)"/>
+    </g>
+    <circle cx="300" cy="238" r="6" fill="#37d07f"/>
+  </g>
+  <g fill="#f3f6f4" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="500">
+    <text x="468" y="228" text-anchor="end" font-size="100">Farm</text>
+    <text x="478" y="352" text-anchor="end" font-size="100">Assist</text>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Bowdoin Face Generator and Classifier">
+  <defs>
+    <linearGradient id="face-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a2f6e"/>
+      <stop offset="1" stop-color="#7b46c9"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="496" height="496" rx="120" fill="url(#face-bg)"/>
+  <g stroke="#c9b8ff" stroke-width="2" opacity="0.5">
+    <line x1="70" y1="150" x2="200" y2="230"/>
+    <line x1="70" y1="256" x2="200" y2="256"/>
+    <line x1="70" y1="362" x2="200" y2="282"/>
+    <line x1="442" y1="150" x2="312" y2="230"/>
+    <line x1="442" y1="256" x2="312" y2="256"/>
+    <line x1="442" y1="362" x2="312" y2="282"/>
+  </g>
+  <g fill="#c9b8ff">
+    <circle cx="70" cy="150" r="10"/><circle cx="70" cy="256" r="10"/><circle cx="70" cy="362" r="10"/>
+    <circle cx="442" cy="150" r="10"/><circle cx="442" cy="256" r="10"/><circle cx="442" cy="362" r="10"/>
+  </g>
+  <circle cx="256" cy="248" r="96" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.55" stroke-width="3"/>
+  <g fill="#ffffff" opacity="0.14">
+    <rect x="176" y="176" width="24" height="24"/>
+    <rect x="176" y="224" width="24" height="24"/>
+    <rect x="200" y="200" width="24" height="24"/>
+    <rect x="176" y="272" width="24" height="24"/>
+    <rect x="200" y="296" width="24" height="24"/>
+  </g>
+  <g fill="#7cfcb0">
+    <circle cx="224" cy="232" r="7"/>
+    <circle cx="288" cy="232" r="7"/>
+    <circle cx="256" cy="266" r="6"/>
+    <circle cx="224" cy="300" r="5"/>
+    <circle cx="256" cy="306" r="5"/>
+    <circle cx="288" cy="300" r="5"/>
+  </g>
+  <path d="M224 300 q32 22 64 0" stroke="#7cfcb0" stroke-width="3" opacity="0.7" fill="none"/>
+  <rect x="150" y="140" width="212" height="230" rx="6" stroke="#7cfcb0" stroke-width="4" fill="none" stroke-dasharray="10 12" opacity="0.9"/>
+  <g stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M150 162 v-22 h22"/>
+    <path d="M340 140 h22 v22"/>
+    <path d="M150 348 v22 h22"/>
+    <path d="M340 370 h22 v-22"/>
+  </g>
+  <text x="256" y="472" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="40" fill="#ffffff">Face CV</text>
+</svg>
