@@ -1,6 +1,7 @@
 
 import React from 'react';
 import KPPicture from '../../data/head_shot.jpg';
+import resumePdf from '../../data/Kyle_Pellerin_Resume.pdf';
 
 
 const Hero = () => {
@@ -81,7 +82,7 @@ const Hero = () => {
       </a>
       <p></p>
       <p></p>
-     <a href='/Kyle_Pellerin_Resume.pdf' download="Kyle_Pellerin_Resume.pdf" style={ctaButtonStyle}
+     <a href={resumePdf} download="Kyle_Pellerin_Resume.pdf" style={ctaButtonStyle}
          onMouseEnter={(e) => { e.target.style.backgroundColor = 'navy'; e.target.style.transform = 'translateY(-2px)';}}
          onMouseLeave={(e) => { e.target.style.backgroundColor = 'var(--primary-color)'; e.target.style.transform = 'translateY(0)';}}
       >
