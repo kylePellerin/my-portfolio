@@ -53,6 +53,24 @@ const Hero = () => {
     boxShadow: '0 4px 10px rgba(var(--primary-color-rgb, 0, 123, 255), 0.25)',
   };
 
+  const downloadResume = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(resumePdf);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Kyle_Pellerin_Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(url);
+    } catch {
+      window.location.href = resumePdf;
+    }
+  };
+
   return (
     <section id="hero-section" style={heroStyle}>
       <h1 style={headingStyle}>
@@ -82,7 +100,7 @@ const Hero = () => {
       </a>
       <p></p>
       <p></p>
-     <a href={resumePdf} download="Kyle_Pellerin_Resume.pdf" style={ctaButtonStyle}
+     <a href={resumePdf} download="Kyle_Pellerin_Resume.pdf" onClick={downloadResume} style={ctaButtonStyle}
          onMouseEnter={(e) => { e.target.style.backgroundColor = 'navy'; e.target.style.transform = 'translateY(-2px)';}}
          onMouseLeave={(e) => { e.target.style.backgroundColor = 'var(--primary-color)'; e.target.style.transform = 'translateY(0)';}}
       >
