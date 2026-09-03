@@ -13,6 +13,7 @@ import IDEAs from '../data/ASEP_POSTER.png';
 import FarmAssistLogo from '../data/FarmAssist.jpg';
 import FaceToolImg from '../data/FaceTool.svg';
 import CafeAppImg from '../data/CafeApp.svg';
+import EsriLogo from '../data/esri logo.jpg';
 
 export const projects = [
   {
@@ -29,17 +30,30 @@ export const projects = [
     imagePlaceholder: "https://placehold.co/600x400/007bff/white?text=GIS+Map+Project"
   },
   {
-    id: 2,
-    title: "Casco Bay Eelgrass Explorer",
+    id: 13,
+    title: "Esri Internship Projects",
     category: "CS",
-    imageUrl: Seagrass,
-    description: "The web app interface I made as part of my internship at COBALT Team Zoestra. This was used to help visualize the change in eelgrass bed health and dispersion in Casco Bay for the past 30 years. A data upload system helped users input field data to accurately monitor real-time dynamics in the eelgrass beds. ",
-    tags: ["R", "R Shiny", "Geoprocessing", "GIS"],
-    liveLink: "https://github.com/kylePellerin/Eelgrass_Mapping_Interface.git",
-    liveLinkName: "Source Code",
-    sourceLink: null, 
+    imageUrl: EsriLogo,
+    description: "A look at the projects I worked on during my software engineering internship at Esri. Over the course of the internship I contributed to cross-platform mapping tools built on the ArcGIS Maps SDK for .NET and collaborated with my team on new features and demos. This video highlights some of the work and contributions I made during my time there.",
+    tags: ["C#", ".NET MAUI", "ArcGIS SDK", "Internship"],
+    liveLink: "https://youtu.be/F7jm-mzDb68",
+    liveLinkName: "Watch the Video",
+    sourceLink: null,
     sourceLinkName: "",
-    imagePlaceholder: "https://placehold.co/600x400/6f42c1/white?text=Algorithm+Visualizer"
+    imagePlaceholder: "https://placehold.co/600x400/007bff/white?text=Esri+Internship"
+  },
+  {
+    id: 14,
+    title: "RosterPulse — Fantasy Football Start/Sit Optimizer",
+    category: "CS",
+    imageUrl: "https://placehold.co/600x400/28a745/white?text=RosterPulse",
+    description: "RosterPulse is a fantasy football start/sit optimizer I built to help managers make smarter weekly lineup decisions. It analyzes player data and projections to recommend the optimal players to start and sit each week, all wrapped in a clean, responsive web interface. Built with Next.js and TypeScript and deployed on Vercel.",
+    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Vercel"],
+    liveLink: "https://fantasylineupoptimizer.vercel.app/",
+    liveLinkName: "Website",
+    sourceLink: "https://github.com/kylePellerin/Fantasy_Football.git",
+    sourceLinkName: "Source Code",
+    imagePlaceholder: "https://placehold.co/600x400/28a745/white?text=RosterPulse"
   },
   {
     id: 10,
@@ -53,6 +67,19 @@ export const projects = [
     sourceLink: "https://github.com/krish0309/KoiPonders",
     sourceLinkName: "Source Code",
     imagePlaceholder: "https://placehold.co/600x400/007bff/white?text=FarmAssist"
+  },
+  {
+    id: 2,
+    title: "Casco Bay Eelgrass Explorer",
+    category: "CS",
+    imageUrl: Seagrass,
+    description: "The web app interface I made as part of my internship at COBALT Team Zoestra. This was used to help visualize the change in eelgrass bed health and dispersion in Casco Bay for the past 30 years. A data upload system helped users input field data to accurately monitor real-time dynamics in the eelgrass beds. ",
+    tags: ["R", "R Shiny", "Geoprocessing", "GIS"],
+    liveLink: "https://github.com/kylePellerin/Eelgrass_Mapping_Interface.git",
+    liveLinkName: "Source Code",
+    sourceLink: null, 
+    sourceLinkName: "",
+    imagePlaceholder: "https://placehold.co/600x400/6f42c1/white?text=Algorithm+Visualizer"
   },
   {
     id: 11,

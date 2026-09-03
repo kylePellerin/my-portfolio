@@ -53,6 +53,7 @@ export const experiences = [
     descriptionPoints: [
       'Developed an ArcGIS Pro Python toolbox and server-based Enterprise widget for rapid semantic search of Oriented Imagery, adding prompt-driven object segmentation (Grounded-SAM) and automated, deduplicated feature class output.',
       "Selected as an Intern Hackathon Finalist and awarded People's Choice.",
+      "Built AI and geospatial automation solutions including a FEMA damage assessment classifier and a PDF-to-parcel extraction pipeline, leveraging computer vision, OCR, and spatial analysis to transform unstructured data into actionable GIS datasets.",
     ],
   },
      {
