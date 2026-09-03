@@ -14,6 +14,7 @@ import FarmAssistLogo from '../data/FarmAssist.jpg';
 import FaceToolImg from '../data/FaceTool.svg';
 import CafeAppImg from '../data/CafeApp.svg';
 import EsriLogo from '../data/esri logo.jpg';
+import SleepersLogo from '../data/sleepers.webp';
 
 export const projects = [
   {
@@ -46,7 +47,7 @@ export const projects = [
     id: 14,
     title: "RosterPulse — Fantasy Football Start/Sit Optimizer",
     category: "CS",
-    imageUrl: "https://placehold.co/600x400/28a745/white?text=RosterPulse",
+    imageUrl: SleepersLogo,
     description: "RosterPulse is a fantasy football start/sit optimizer I built to help managers make smarter weekly lineup decisions. It analyzes player data and projections to recommend the optimal players to start and sit each week, all wrapped in a clean, responsive web interface. Built with Next.js and TypeScript and deployed on Vercel.",
     tags: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Vercel"],
     liveLink: "https://fantasylineupoptimizer.vercel.app/",
