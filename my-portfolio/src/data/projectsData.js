@@ -167,7 +167,7 @@ export const projects = [
     imageUrl: Topsham,
     description: "Maps I created while acting as a consultant for the town of Topsham Maine. I was responsible for updating the Environmental Health and Safety Inventory as well as the Water Quality Inventory for the town by mapping the results as well as providing them with the updated data. I then presented my work to the Topsham Conservation Commission. ",
     tags: ["ArcGIS Pro", "Geodatabases", "Consulting", "Cartography"],
-    liveLink: "https://youtu.be/lMm_G7uG4No?si=eEEzPeSbHgCWbB85&t=662",
+    liveLink: "https://youtu.be/lMm_G7uG4No?si=eEEzPeSbHgCWbB85",
     liveLinkName: "Watch the Presentation",
     sourceLink: "https://www.bowdoin.edu/news/2025/06/advanced-gis-students-boost-natural-areas-plan-for-topsham.html", 
     sourceLinkName: "Read Article",
